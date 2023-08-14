@@ -7,10 +7,10 @@ export const VirtualOfficeIcon = () => (
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
     >
-        <circle cx="33.0364" cy="33.24" r="33.0364" fill="url(#pattern0)" />
+        <circle cx="33.0364" cy="33.24" r="33.0364" fill="url(#pattern3)" />
         <defs>
             <pattern
-                id="pattern0"
+                id="pattern3"
                 patternContentUnits="objectBoundingBox"
                 width="1"
                 height="1"

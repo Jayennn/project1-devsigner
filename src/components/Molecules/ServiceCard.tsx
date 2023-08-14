@@ -1,6 +1,5 @@
 import { Card, CardContent, CardFooter, CardHeader } from '../Atoms/Card.tsx'
 import { LearnMore } from '../icons/LearnMore.tsx'
-
 import { Typography } from '@/components/Atoms/Typography.tsx'
 import { ServiceCardPropsType } from '@/types/CustomPropsType.tsx'
 
