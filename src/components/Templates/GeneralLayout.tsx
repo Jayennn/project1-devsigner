@@ -1,18 +1,18 @@
-import Header from "./Header.tsx";
-import Footer from "./Footer.tsx";
-import React from "react";
+import Header from './Header.tsx'
+import Footer from './Footer.tsx'
+import React from 'react'
 
 type LayoutProps = {
     children: React.ReactNode
 }
-const GeneralLayout = ({children}: LayoutProps) => {
-    return <>
-        <Header/>
-        <main>
+const GeneralLayout = ({ children }: LayoutProps) => {
+    return (
+        <>
+            <Header />
             {children}
-        </main>
-        <Footer/>
-    </>
+            <Footer />
+        </>
+    )
 }
 
-export default GeneralLayout;
+export default GeneralLayout
