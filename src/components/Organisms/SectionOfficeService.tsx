@@ -9,7 +9,7 @@ const SectionOfficeService = ({
     services,
 }: SectionServiceOfficePropType) => {
     return (
-        <section className={'container  py-12 text-center'}>
+        <section className={'container  py-12 text-center lg:px-32'}>
             <Typography
                 variant={'h4'}
                 color={'blue'}
@@ -33,11 +33,7 @@ const SectionOfficeService = ({
             >
                 {description}
             </Typography>
-            <div
-                className={
-                    'my-12 grid grid-cols-1 gap-12  lg:grid-cols-3 lg:px-32'
-                }
-            >
+            <div className={'my-12 grid grid-cols-1 gap-12  lg:grid-cols-3 '}>
                 {services.map(({ imageUrl, title, subtitle }) => (
                     <ServiceOfficeCard
                         imageUrl={imageUrl}

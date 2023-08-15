@@ -9,12 +9,12 @@ const ServiceOfficeCard = ({
     imageUrl,
 }: ServiceOfficeCardPropsType) => {
     return (
-        <Card className=" gap-7 text-left">
-            <CardHeader>
+        <Card className=" gap-7 px-4 py-2 text-left">
+            <CardHeader className={''}>
                 <img src={imageUrl} alt="office" />
             </CardHeader>
             <CardContent>
-                <Typography variant="h6" color="primary">
+                <Typography variant="h4" color="primary">
                     {title}
                 </Typography>
                 <Typography
