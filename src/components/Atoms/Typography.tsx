@@ -12,9 +12,14 @@ type TypographyProps<T extends React.ElementType> = {
    children: React.ReactNode;
 } & React.ComponentPropsWithoutRef<T>;
 
-type TypographyComponent = <T extends React.ElementType = 'p'>(
-   props: TypographyProps<T>
-) => React.ReactElement | null;
+type TypographyComponent = {
+   <T extends React.ElementType = "p">(
+      props: TypographyProps<T>,
+      ref?: React.ComponentPropsWithRef<T>["ref"]
+   ): React.ReactElement | null;
+   displayName?: string;
+};
+
 
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -61,6 +66,6 @@ const Typography: TypographyComponent = React.forwardRef(
    },
 );
 
-// Typography.displayName = "Typography";
+Typography.displayName = "string"
 
 export { Typography };
