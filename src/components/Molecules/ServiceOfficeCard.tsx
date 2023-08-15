@@ -20,7 +20,7 @@ const ServiceOfficeCard = ({
                 <Typography
                     variant="p"
                     color="secondary"
-                    className={'mt-6 !text-lg'}
+                    className={'mt-6 !text-base'}
                 >
                     {subtitle}
                 </Typography>

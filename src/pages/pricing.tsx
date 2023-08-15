@@ -17,8 +17,8 @@ const PricingPage = () => {
             <GeneralLayout>
                 <section className="grid place-content-center">
                     <div className="container">
-                        <div className="max-w-4xl text-center">
-                            <Typography className="md:leading-tight" as={"h1"} variant={"h1"} color={"primary"}>
+                        <div className="max-w-4xl text-left md:text-center">
+                            <Typography as={"h1"} variant={"h1"} color={"primary"}>
                                 Discover flexible spaces and solutions to your business
                             </Typography>
                             <Typography className="mt-2 font-light md:leading-tight" as={"h6"} variant={"h6"} color={"secondary"}>
@@ -39,7 +39,7 @@ const PricingPage = () => {
                                 </Button>
                             </div>
                         </div>
-                        <div className="mt-10 grid justify-items-center grid-cols-3">
+                        <div className="mt-10 grid justify-items-center gap-4 md:gap-0 grid-cols-1 md:grid-cols-3">
                             <Card className="h-fit max-w-xs">
                                 <CardHeader className="grid gap-3">
                                     <img className="max-w-[2rem]" src={logo1} alt="logo-1" />
@@ -129,7 +129,7 @@ const PricingPage = () => {
                 </section>
                 <section className="mt-28 grid place-content-center">
                     <div className="container">
-                        <div className="text-center">
+                        <div className="text-left md:text-center">
                             <Typography className="md:leading-tight" as={'h1'} variant={"h1"} color={"primary"}>
                                 Frequently asked questions about cowoking
                             </Typography>
@@ -175,8 +175,8 @@ const PricingPage = () => {
                 </section>
                 <section className="mt-28">
                     <div className="container">
-                        <div className="bg-[#0192FE99]/10 rounded-xl px-10 py-8 flex items-center justify-between">
-                            <div className="ml-10 grid gap-8 max-w-xl">
+                        <div className="bg-[#0192FE99]/10 rounded-xl px-10 py-8 flex flex-col-reverse md:flex-row items-center justify-between">
+                            <div className="mt-10 md:mt-0 md:ml-10 grid gap-8 max-w-xl">
                                 <Typography className="md:leading-tight" as={"h2"} variant={"h2"} color={"primary"}>
                                     Confused about which plan would be most suitable for me?
                                 </Typography>
@@ -192,7 +192,7 @@ const PricingPage = () => {
                 </section>
                 <section className="mt-28 grid place-content-center">
                     <div className="container">
-                        <div className="text-center">
+                        <div className="text-left md:text-center">
                             <Typography className="md:leading-tight" as={"h1"} variant={"h1"} color={"primary"}>
                                 We enable people to work where they want, when they want and how they want
                             </Typography>

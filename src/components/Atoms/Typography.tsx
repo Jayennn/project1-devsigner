@@ -38,12 +38,12 @@ const Typography: TypographyComponent = React.forwardRef(
             ref={ref}
             className={cn(
                [
-                  variant === "h1" && ["text-4xl md:text-4xl font-bold"],
+                  variant === "h1" && ["text-4xl md:leading-extraLoose md:text-5xl font-bold"],
                   variant === "h2" && ["leading-5 text-3xl md:text-4xl font-bold"],
                   variant === "h3" && ["leading-4 text-2xl md:text-3xl font-bold"],
                   variant === "h4" && ["leading-3 text-xl md:text-2xl font-bold"],
                   variant === "h5" && ["text-lg md:text-xl font-bold"],
-                  variant === "h6" && ["text-xl md:text-lg font-bold"],
+                  variant === "h6" && ["text-base md:text-lg font-bold"],
                   variant === "p" && ["text-sm md:text-base font-normal"],
                ],
                [
