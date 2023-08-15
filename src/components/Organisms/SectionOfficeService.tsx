@@ -1,5 +1,5 @@
 import { SectionServiceOfficePropType } from '@/types/CustomPropsType.tsx'
-import { Typography } from '@/components/Atoms/Typography.tsx'
+import Typography from '@/components/Atoms/Typography.tsx'
 import ServiceOfficeCard from '@/components/Molecules/ServiceOfficeCard.tsx'
 
 const SectionOfficeService = ({

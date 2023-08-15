@@ -1,5 +1,5 @@
 import Button from "../Atoms/Button";
-import { Typography } from "../Atoms/Typography";
+import Typography from "../Atoms/Typography";
 import { NAVBAR_LINKS } from "./data";
 
 const Header = () => {

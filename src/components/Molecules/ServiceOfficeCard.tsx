@@ -1,6 +1,6 @@
 import { Card, CardContent, CardFooter, CardHeader } from '../Atoms/Card.tsx'
 import { LearnMore } from '../icons/LearnMore.tsx'
-import { Typography } from '@/components/Atoms/Typography.tsx'
+import Typography from '@/components/Atoms/Typography.tsx'
 import { ServiceOfficeCardPropsType } from '@/types/CustomPropsType.tsx'
 
 const ServiceOfficeCard = ({

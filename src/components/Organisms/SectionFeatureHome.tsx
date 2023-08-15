@@ -1,4 +1,4 @@
-import { Typography } from '@/components/Atoms/Typography.tsx'
+import Typography from '@/components/Atoms/Typography.tsx'
 import urlImage from '@/assets/hero/hero_feature_home.png'
 const SectionFeatureHome = () => {
     return (

@@ -1,6 +1,6 @@
 import Button from "../Atoms/Button";
 import { Card, CardContent, CardHeader } from "../Atoms/Card";
-import { Typography } from "../Atoms/Typography";
+import Typography from "../Atoms/Typography";
 import logo1 from "../../assets/price-logo/logo1.png";
 import logo2 from "../../assets/price-logo/logo2.png";
 import logo3 from "../../assets/price-logo/logo3.png";
