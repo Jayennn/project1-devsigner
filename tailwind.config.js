@@ -10,6 +10,9 @@ export default {
             colors: {
                 themeBlue: '#0192FE',
             },
+            lineHeight: {
+                extraLoose: '62px',
+            },
         },
     },
     plugins: [],
