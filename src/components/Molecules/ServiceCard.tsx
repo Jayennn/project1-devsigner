@@ -1,6 +1,6 @@
-import { Card, CardContent, CardFooter, CardHeader } from '../Atoms/Card.tsx'
-import { LearnMore } from '../icons/LearnMore.tsx'
-import { Typography } from '@/components/Atoms/Typography.tsx'
+import { Card, CardContent, CardFooter, CardHeader } from '@/components/Atoms/Card.tsx'
+import { LearnMoreIcon } from '../icons/LearnMoreIcon.tsx'
+import <Typography></Typography> from '@/components/Atoms/Typography.tsx'
 import { ServiceCardPropsType } from '@/types/CustomPropsType.tsx'
 
 const ServiceCard = ({
@@ -31,7 +31,7 @@ const ServiceCard = ({
                     className={'flex gap-2 font-semibold'}
                 >
                     Learn More
-                    <LearnMore />
+                    <LearnMoreIcon />
                 </Typography>
             </CardFooter>
         </Card>
