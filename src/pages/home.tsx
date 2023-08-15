@@ -13,6 +13,7 @@ import {
 } from '@/components/icons'
 import SectionOfficeService from '@/components/Organisms/SectionOfficeService.tsx'
 import image from '@/assets/card/Office.png'
+import SectionHeroHome from '@/components/Organisms/SectionHeroHome.tsx'
 
 const services: ServiceCardPropsType[] = [
     {
@@ -68,6 +69,7 @@ const HomePage = () => {
     return (
         <GeneralLayout>
             <main className={'min-h-screen'}>
+                <SectionHeroHome />
                 <SectionService
                     title={'Our Services'}
                     subtitle={
