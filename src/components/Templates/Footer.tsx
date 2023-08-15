@@ -1,4 +1,4 @@
-import Typography from "../Atoms/Typography";
+import  Typography  from "../Atoms/Typography";
 import { FacebookIcon } from "../icons/FacebookIcon";
 import { InstagramIcon } from "../icons/IntagramIcon";
 import { LinkedInIcon } from "../icons/LinkedInIcon";

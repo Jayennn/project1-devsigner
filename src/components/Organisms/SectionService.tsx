@@ -28,6 +28,7 @@ const SectionService = ({
             <div className={'my-16 grid grid-cols-1 gap-12 lg:grid-cols-3'}>
                 {services.map(({ icon, title, subtitle, isBordered }) => (
                     <ServiceCard
+                        key={title}
                         icon={icon}
                         title={title}
                         subtitle={subtitle}
