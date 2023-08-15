@@ -14,6 +14,7 @@ import {
 import SectionOfficeService from '@/components/Organisms/SectionOfficeService.tsx'
 import image from '@/assets/card/Office.png'
 import SectionHeroHome from '@/components/Organisms/SectionHeroHome.tsx'
+import SectionFeatureHome from '@/components/Organisms/SectionFeatureHome.tsx'
 
 const services: ServiceCardPropsType[] = [
     {
@@ -68,7 +69,7 @@ const serviceOffices: ServiceOfficeCardPropsType[] = [
 const HomePage = () => {
     return (
         <GeneralLayout>
-            <main className={'min-h-screen'}>
+            <main className={'bg-[#F1F1F1, #F1F1F100] min-h-screen'}>
                 <SectionHeroHome />
                 <SectionService
                     title={'Our Services'}
@@ -77,6 +78,7 @@ const HomePage = () => {
                     }
                     services={services}
                 />
+                <SectionFeatureHome />
                 <SectionOfficeService
                     title={'Why Serviced Office'}
                     subtitle={
