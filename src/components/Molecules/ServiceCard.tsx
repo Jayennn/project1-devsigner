@@ -1,6 +1,6 @@
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/Atoms/Card.tsx'
 import { LearnMoreIcon } from '../icons/LearnMoreIcon.tsx'
-import <Typography></Typography> from '@/components/Atoms/Typography.tsx'
+import Typography from '@/components/Atoms/Typography.tsx'
 import { ServiceCardPropsType } from '@/types/CustomPropsType.tsx'
 
 const ServiceCard = ({
