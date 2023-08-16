@@ -3,7 +3,7 @@ import Button from '@/components/Atoms/Button.tsx'
 import urlImage from '@/assets/hero/hero_home.png'
 const SectionHeroHome = () => {
     return (
-        <section className={'container py-12 lg:px-32'}>
+        <section className={'container py-12'}>
             <div
                 className={
                     'grid grid-cols-1 items-center gap-12 lg:grid-cols-2'
@@ -11,8 +11,8 @@ const SectionHeroHome = () => {
             >
                 <div>
                     <Typography
-                        variant={'h1'}
-                        className={'max-w-lg !leading-extraLoose'}
+                        variant={'h2'}
+                        className={'!text-4xl max-w-xs font-[700] !leading-snug'}
                     >
                         The workspace that works for you & your team
                     </Typography>

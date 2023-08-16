@@ -15,6 +15,8 @@ import SectionOfficeService from '@/components/Organisms/SectionOfficeService.ts
 import image from '@/assets/card/Office.png'
 import SectionHeroHome from '@/components/Organisms/SectionHeroHome.tsx'
 import SectionFeatureHome from '@/components/Organisms/SectionFeatureHome.tsx'
+import SectionLocationHome from "@/components/Organisms/SectionLocationHome.tsx";
+import SectionCTAHome from "@/components/Organisms/SectionCTAHome.tsx";
 
 const services: ServiceCardPropsType[] = [
     {
@@ -90,6 +92,8 @@ const HomePage = () => {
                     }
                     services={serviceOffices}
                 />
+                <SectionLocationHome />
+                <SectionCTAHome />
             </main>
         </GeneralLayout>
     )

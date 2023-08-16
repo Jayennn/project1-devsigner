@@ -8,7 +8,7 @@ const SectionService = ({
     services,
 }: SectionServicePropsType) => {
     return (
-        <section className={'container  py-12 lg:px-32'}>
+        <section className={'container  py-12'}>
             <Typography
                 variant={'h5'}
                 color={'blue'}
