@@ -11,6 +11,8 @@ import { VirtualOfficeIcon } from '@/components/icons/VirtualOfficeIcon.tsx'
 import { AccordionPlusIcon } from '@/components/icons/AccordionPlusIcon.tsx'
 import { AccordionMinusIcon } from '@/components/icons/AccordionMinusIcon.tsx'
 import { LocationIcon } from '@/components/icons/LocationIcon.tsx'
+import { ReviewNextIcon } from '@/components/icons/ReviewNextIcon.tsx'
+import { ReviewPrevIcon } from '@/components/icons/ReviewPrevIcon'
 
 export {
     CoworkingSpacesIcon,
@@ -22,6 +24,8 @@ export {
     MeetingRoomIcon,
     StarterSpacesIcon,
     TwitterIcon,
+    ReviewNextIcon,
+    ReviewPrevIcon,
     VirtualOfficeIcon,
     AccordionPlusIcon,
     AccordionMinusIcon,

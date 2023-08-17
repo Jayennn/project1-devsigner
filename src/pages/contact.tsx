@@ -14,8 +14,8 @@ const ContactPage = () => {
             <GeneralLayout>
                 <section className="grid place-content-center">
                     <div className="container">
-                        <div className="text-center grid gap-4">
-                            <Typography className="md:text-lg uppercase" as={"h1"} variant={"h1"} color={"blue"}>
+                        <div className="text-left md:text-center grid gap-4">
+                            <Typography className="text-base md:text-lg uppercase" as={"h1"} variant={"h1"} color={"blue"}>
                                 Contact us
                             </Typography>
                             <Typography className="md:leading-tight" as={"h1"} variant={"h1"} color={"primary"}>
@@ -33,8 +33,8 @@ const ContactPage = () => {
                         <div className="max-w-6xl mx-auto">
                             <MapsIcon />
                         </div>
-                        <div className="mt-16 grid grid-cols-3 place-items-center">
-                            <Card className="max-w-xs w-[18rem]  px-4 py-2">
+                        <div className="mt-16 gap-4 grid md:gap-0 grid-cols-1 md:grid-cols-3 place-items-center">
+                            <Card className="w-full md:max-w-xs md:w-[18rem] px-4 py-2">
                                 <CardHeader>
                                     <Typography as="h6" variant={"h6"} color={"primary"}>
                                         Global Locations
@@ -52,7 +52,7 @@ const ContactPage = () => {
                                     <LocationIcon/>
                                 </CardFooter>
                             </Card>
-                            <Card className="max-w-xs w-[18rem]  px-4 py-2">
+                            <Card className="w-full md:max-w-xs md:w-[18rem]  px-4 py-2">
                                 <CardHeader>
                                     <Typography as="h6" variant={"h6"} color={"primary"}>
                                         Global Locations
@@ -71,7 +71,7 @@ const ContactPage = () => {
                                     <LearnMoreIcon/>
                                 </CardFooter>
                             </Card>
-                            <Card className="max-w-xs w-[18rem]  px-4 py-2">
+                            <Card className="w-full md:max-w-xs md:w-[18rem]  px-4 py-2">
                                 <CardHeader>
                                     <Typography as="h6" variant={"h6"} color={"primary"}>
                                         Global Locations
@@ -94,7 +94,7 @@ const ContactPage = () => {
                 </section>
                 <section className="mt-28">
                     <div className="container">
-                        <div className="bg-[#0192FE99]/10 rounded-xl px-10 py-8 flex items-center justify-between">
+                        <div className="bg-[#0192FE99]/10 rounded-xl px-10 py-8 flex flex-col md:flex-row items-center justify-between">
                             <div className="max-w-md">
                                 <img src={person} alt="person" />
                             </div>
@@ -120,7 +120,7 @@ const ContactPage = () => {
                 </section>
                 <section className="mt-28">
                     <div className="container grid gap-4 place-content-center">
-                        <Typography className="text-center md:text-xl font-bold" as={"h1"} variant={"h1"} color={"secondary"}>
+                        <Typography className="text-left md:text-center md:text-xl font-bold" as={"h1"} variant={"h1"} color={"secondary"}>
                             Trusted by top companies and startups around the world
                         </Typography>
                         <div className="max-w-4xl">
