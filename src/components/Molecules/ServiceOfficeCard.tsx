@@ -1,6 +1,6 @@
 import { Card, CardContent, CardFooter, CardHeader } from '../Atoms/Card.tsx'
-import { LearnMore } from '../icons/LearnMore.tsx'
-import { Typography } from '@/components/Atoms/Typography.tsx'
+import { LearnMoreIcon } from '../icons/LearnMoreIcon.tsx'
+import Typography from '@/components/Atoms/Typography.tsx'
 import { ServiceOfficeCardPropsType } from '@/types/CustomPropsType.tsx'
 
 const ServiceOfficeCard = ({
@@ -20,7 +20,7 @@ const ServiceOfficeCard = ({
                 <Typography
                     variant="p"
                     color="secondary"
-                    className={'mt-6 !text-lg'}
+                    className={'mt-6'}
                 >
                     {subtitle}
                 </Typography>
@@ -29,10 +29,10 @@ const ServiceOfficeCard = ({
                 <Typography
                     variant={'p'}
                     color={'blue'}
-                    className={'flex items-center gap-2 !text-lg font-semibold'}
+                    className={'flex items-center gap-2 font-semibold'}
                 >
                     Learn more
-                    <LearnMore />
+                    <LearnMoreIcon />
                 </Typography>
             </CardFooter>
         </Card>

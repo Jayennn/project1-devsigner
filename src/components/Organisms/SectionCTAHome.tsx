@@ -1,5 +1,5 @@
 import {Card} from "@/components/Atoms/Card.tsx";
-import {Typography} from "@/components/Atoms/Typography.tsx";
+import Typography from "@/components/Atoms/Typography.tsx";
 import Button from "@/components/Atoms/Button.tsx";
 import imageUrl from "@/assets/card/card_cta_home.jpg"
 import {PlayIcon} from "@/components/icons";

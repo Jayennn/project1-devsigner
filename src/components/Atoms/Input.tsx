@@ -5,7 +5,7 @@ import Button from "./Button"
 
 export interface InputProps
    extends React.InputHTMLAttributes<HTMLInputElement> {
-   button?: boolean
+   button?: boolean | string
 }
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
@@ -23,14 +23,15 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
                   {...props}
                />
             ) : (
-                  <div className="flex items-center justify-between gap-2 h-9 w-full rounded-3xl border border-input bg-transparent pl-7 pr-1 py-6 text-base shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50">
+                  <div className="flex items-center justify-between gap-2 h-9 w-full bg-white rounded-full border border-input 
+                  pl-7 pr-1 py-7 text-base shadow-sm transition-colors">
                   <input
                      type={type}
-                     className="w-full focus:outline-none border-none"
+                        className="w-full bg-transparent file:border-0 file:bg-transparent file:text-sm file:font-medium focus:outline-none border-none"
                      ref={ref}
                      {...props}
                      />
-                     <Button variant="default" size="lg">
+                     <Button variant={"default"} size={"lg"}>
                         Submit
                      </Button>
                </div>

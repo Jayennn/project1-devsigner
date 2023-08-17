@@ -1,4 +1,5 @@
 import {
+    ReviewCardPropsType,
     ServiceCardPropsType,
     ServiceOfficeCardPropsType,
 } from '@/types/CustomPropsType.tsx'
@@ -17,6 +18,8 @@ import SectionHeroHome from '@/components/Organisms/SectionHeroHome.tsx'
 import SectionFeatureHome from '@/components/Organisms/SectionFeatureHome.tsx'
 import SectionLocationHome from "@/components/Organisms/SectionLocationHome.tsx";
 import SectionCTAHome from "@/components/Organisms/SectionCTAHome.tsx";
+import SectionReview from '@/components/Organisms/SectionReview'
+import person from "@/assets/review-avatar/person1.png";
 
 const services: ServiceCardPropsType[] = [
     {
@@ -68,6 +71,27 @@ const serviceOffices: ServiceOfficeCardPropsType[] = [
     },
 ]
 
+const ReviewCards: ReviewCardPropsType[] = [
+    {
+        description: "Futurspace is an excellent coworking space for my agency. It’s a great place to meet other business. owners expectations",
+        name: "Del Gibbs",
+        role: "VP, Globee Softech",
+        imageUrl: person
+    },
+    {
+        description: "Quisque consectetur vulputate odio, non dictum metus porttitor molestie. Duis pharetra suscipit dolor, quis euismod velit fringilla sed.",
+        name: "Brittany",
+        role: "Co-Founder & CTO - Payfi",
+        imageUrl: person
+    },
+    {
+        description: "Lorem ipsum dolor sit amet consectetur non adipiscing elit gravida posuere odio metus adipiscing tincidunt venenatis amet sagittis tellus porttitor enim blandit venenatis tellus.",
+        name: "Randall Robertson",
+        role: "Project lead at Zoole",
+        imageUrl: person
+    },
+]
+
 const HomePage = () => {
     return (
         <GeneralLayout>
@@ -94,6 +118,7 @@ const HomePage = () => {
                 />
                 <SectionLocationHome />
                 <SectionCTAHome />
+                <SectionReview Cards={ReviewCards}/>
             </main>
         </GeneralLayout>
     )

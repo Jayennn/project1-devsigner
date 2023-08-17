@@ -1,4 +1,4 @@
-import {Typography} from "@/components/Atoms/Typography.tsx";
+import Typography from "@/components/Atoms/Typography.tsx";
 import Button from "@/components/Atoms/Button.tsx";
 import {LocationIcon} from "@/components/icons";
 import ItemLocation from "@/components/Molecules/ItemLocation.tsx";

@@ -1,4 +1,4 @@
-import { Typography } from "../Atoms/Typography";
+import  Typography  from "../Atoms/Typography";
 import { FacebookIcon } from "../icons/FacebookIcon";
 import { InstagramIcon } from "../icons/IntagramIcon";
 import { LinkedInIcon } from "../icons/LinkedInIcon";
@@ -10,7 +10,7 @@ const Footer = () => {
       <footer className="pt-28 pb-4">
          <div className="container py-6">
             <hr />
-            <div className="pt-12 pb-10 flex items-center justify-between">
+            <div className="pt-12 pb-10 flex gap-8 md:gap-0 flex-col items-start md:flex-row md:items-center md:justify-between">
                <div className="max-w-[15rem] grid">
                   <Typography className="uppercase text-[#0192FE]" variant="h4">
                      Futurspace
@@ -33,7 +33,7 @@ const Footer = () => {
                      </li>
                   </ul>
                </div>
-               <div className="basis-2/4 flex items-center justify-between">
+               <div className="w-full md:basis-2/4 flex items-center justify-between">
                   <div className="grid">
                      <Typography variant="h5" color="primary">
                         About

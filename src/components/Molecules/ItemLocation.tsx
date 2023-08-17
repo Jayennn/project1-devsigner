@@ -1,5 +1,5 @@
 import React from "react";
-import {Typography} from "@/components/Atoms/Typography.tsx";
+import Typography from "@/components/Atoms/Typography.tsx";
 
 
 const ItemLocation = ({icon, title}: { icon: React.ReactNode, title: string }) => {
