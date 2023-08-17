@@ -25,3 +25,16 @@ export type SectionServiceOfficePropType = {
     description: string
     services: ServiceOfficeCardPropsType[]
 }
+
+export type SectionReviewPropsType = {
+    Cards: ReviewCardPropsType[]
+}
+
+
+export type ReviewCardPropsType = {
+    description: string
+    name: string
+    role: string
+    imageUrl: string
+
+}

@@ -5,7 +5,7 @@ import Button from "./Button"
 
 export interface InputProps
    extends React.InputHTMLAttributes<HTMLInputElement> {
-   button?: boolean
+   button?: boolean | string
 }
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(

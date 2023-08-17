@@ -2277,33 +2277,33 @@ export const MapsIcon = () => {
             <path d="M367.711 721.603L370.742 718.571C371.366 717.947 371.366 716.907 370.742 716.283C370.118 715.659 369.078 715.659 368.454 716.283L365.422 719.314L362.391 716.283C361.767 715.659 360.727 715.659 360.103 716.283C359.478 716.907 359.478 717.947 360.103 718.571L363.134 721.603L360.103 724.634C359.478 725.258 359.478 726.298 360.103 726.922C360.727 727.546 361.767 727.546 362.391 726.922L365.422 723.891L368.454 726.922C369.078 727.546 370.118 727.546 370.742 726.922C371.366 726.298 371.366 725.258 370.742 724.634L367.711 721.603Z" fill="#DBDBDB" />
             <path d="M354.664 708.943L357.696 705.911C358.32 705.287 358.32 704.247 357.696 703.623C357.071 702.999 356.031 702.999 355.407 703.623L352.376 706.654L349.345 703.623C348.72 702.999 347.68 702.999 347.056 703.623C346.432 704.247 346.432 705.287 347.056 705.911L350.088 708.943L347.056 711.974C346.432 712.598 346.432 713.638 347.056 714.262C347.68 714.886 348.72 714.886 349.345 714.262L352.376 711.231L355.407 714.262C356.031 714.886 357.071 714.886 357.696 714.262C358.32 713.638 358.32 712.598 357.696 711.974L354.664 708.943Z" fill="#DBDBDB" />
             <path d="M367.711 721.603L370.742 718.571C371.366 717.947 371.366 716.907 370.742 716.283C370.118 715.659 369.078 715.659 368.454 716.283L365.422 719.314L362.391 716.283C361.767 715.659 360.727 715.659 360.103 716.283C359.478 716.907 359.478 717.947 360.103 718.571L363.134 721.603L360.103 724.634C359.478 725.258 359.478 726.298 360.103 726.922C360.727 727.546 361.767 727.546 362.391 726.922L365.422 723.891L368.454 726.922C369.078 727.546 370.118 727.546 370.742 726.922C371.366 726.298 371.366 725.258 370.742 724.634L367.711 721.603Z" fill="#DBDBDB" />
-            <circle opacity="0.1" cx="153" cy="296" r="27" fill="#0192FE" />
-            <circle opacity="0.3" cx="153" cy="296" r="19" fill="#0192FE" />
-            <circle cx="153" cy="296" r="10" fill="#0192FE" />
-            <circle opacity="0.1" cx="431" cy="446" r="27" fill="#0192FE" />
-            <circle opacity="0.3" cx="431" cy="446" r="19" fill="#0192FE" />
-            <circle cx="431" cy="446" r="10" fill="#0192FE" />
-            <circle opacity="0.1" cx="1035" cy="323" r="27" fill="#0192FE" />
-            <circle opacity="0.3" cx="1035" cy="323" r="19" fill="#0192FE" />
-            <circle cx="1035" cy="323" r="10" fill="#0192FE" />
-            <circle opacity="0.1" cx="823" cy="277" r="27" fill="#0192FE" />
-            <circle opacity="0.3" cx="823" cy="277" r="19" fill="#0192FE" />
-            <circle cx="823" cy="277" r="10" fill="#0192FE" />
-            <circle opacity="0.1" cx="1263" cy="396" r="27" fill="#0192FE" />
-            <circle opacity="0.3" cx="1263" cy="396" r="19" fill="#0192FE" />
-            <circle cx="1263" cy="396" r="10" fill="#0192FE" />
-            <circle opacity="0.1" cx="628" cy="229" r="27" fill="#0192FE" />
-            <circle opacity="0.3" cx="628" cy="229" r="19" fill="#0192FE" />
-            <circle cx="628" cy="229" r="10" fill="#0192FE" />
-            <circle opacity="0.1" cx="1263" cy="244" r="27" fill="#0192FE" />
-            <circle opacity="0.3" cx="1263" cy="244" r="19" fill="#0192FE" />
-            <circle cx="1263" cy="244" r="10" fill="#0192FE" />
-            <circle opacity="0.1" cx="719" cy="117" r="27" fill="#0192FE" />
-            <circle opacity="0.3" cx="719" cy="117" r="19" fill="#0192FE" />
-            <circle cx="719" cy="117" r="10" fill="#0192FE" />
-            <circle opacity="0.1" cx="1324" cy="549" r="27" fill="#0192FE" />
-            <circle opacity="0.3" cx="1324" cy="549" r="19" fill="#0192FE" />
-            <circle cx="1324" cy="549" r="10" fill="#0192FE" />
+            <circle className="cursor-pointer" opacity="0.1" cx="153" cy="296" r="27" fill="#0192FE" />
+            <circle className="cursor-pointer" opacity="0.3" cx="153" cy="296" r="19" fill="#0192FE" />
+            <circle className="cursor-pointer" cx="153" cy="296" r="10" fill="#0192FE" />
+            <circle className="cursor-pointer" opacity="0.1" cx="431" cy="446" r="27" fill="#0192FE" />
+            <circle className="cursor-pointer" opacity="0.3" cx="431" cy="446" r="19" fill="#0192FE" />
+            <circle className="cursor-pointer" cx="431" cy="446" r="10" fill="#0192FE" />
+            <circle className="cursor-pointer" opacity="0.1" cx="1035" cy="323" r="27" fill="#0192FE" />
+            <circle className="cursor-pointer" opacity="0.3" cx="1035" cy="323" r="19" fill="#0192FE" />
+            <circle className="cursor-pointer" cx="1035" cy="323" r="10" fill="#0192FE" />
+            <circle className="cursor-pointer" opacity="0.1" cx="823" cy="277" r="27" fill="#0192FE" />
+            <circle className="cursor-pointer" opacity="0.3" cx="823" cy="277" r="19" fill="#0192FE" />
+            <circle className="cursor-pointer" cx="823" cy="277" r="10" fill="#0192FE" />
+            <circle className="cursor-pointer" opacity="0.1" cx="1263" cy="396" r="27" fill="#0192FE" />
+            <circle className="cursor-pointer" opacity="0.3" cx="1263" cy="396" r="19" fill="#0192FE" />
+            <circle className="cursor-pointer" cx="1263" cy="396" r="10" fill="#0192FE" />
+            <circle className="cursor-pointer" opacity="0.1" cx="628" cy="229" r="27" fill="#0192FE" />
+            <circle className="cursor-pointer" opacity="0.3" cx="628" cy="229" r="19" fill="#0192FE" />
+            <circle className="cursor-pointer" cx="628" cy="229" r="10" fill="#0192FE" />
+            <circle className="cursor-pointer" opacity="0.1" cx="1263" cy="244" r="27" fill="#0192FE" />
+            <circle className="cursor-pointer" opacity="0.3" cx="1263" cy="244" r="19" fill="#0192FE" />
+            <circle className="cursor-pointer" cx="1263" cy="244" r="10" fill="#0192FE" />
+            <circle className="cursor-pointer" opacity="0.1" cx="719" cy="117" r="27" fill="#0192FE" />
+            <circle className="cursor-pointer" opacity="0.3" cx="719" cy="117" r="19" fill="#0192FE" />
+            <circle className="cursor-pointer" cx="719" cy="117" r="10" fill="#0192FE" />
+            <circle className="cursor-pointer" opacity="0.1" cx="1324" cy="549" r="27" fill="#0192FE" />
+            <circle className="cursor-pointer" opacity="0.3" cx="1324" cy="549" r="19" fill="#0192FE" />
+            <circle className="cursor-pointer" cx="1324" cy="549" r="10" fill="#0192FE" />
          </g>
          <defs>
             <clipPath id="clip0_1_866">

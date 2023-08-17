@@ -25,7 +25,7 @@ const Header = () => {
                </div>
                <ul className="flex items-center gap-7">
                   {NAVBAR_LINKS.map((link) => (
-                     <li className="text-sm" key={link}>{ link }</li>
+                     <li className="hidden md:block text-sm" key={link}>{ link }</li>
                   ))}
                   <li>
                      <Button

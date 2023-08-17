@@ -9,7 +9,7 @@ const GeneralLayout = ({ children }: LayoutProps) => {
     return (
         <>
             <Header />
-                <main className='py-28'>
+                <main className='py-14'>
                     {children}
                 </main>
             <Footer />
