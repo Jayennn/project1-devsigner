@@ -10,11 +10,14 @@ import { TwitterIcon } from '@/components/icons/TwitterIcon.tsx'
 import { VirtualOfficeIcon } from '@/components/icons/VirtualOfficeIcon.tsx'
 import { AccordionPlusIcon } from '@/components/icons/AccordionPlusIcon.tsx'
 import { AccordionMinusIcon } from '@/components/icons/AccordionMinusIcon.tsx'
+import {PlayIcon} from "@/components/icons/PlayIcon.tsx";
 import { LocationIcon } from '@/components/icons/LocationIcon.tsx'
 import { ReviewNextIcon } from '@/components/icons/ReviewNextIcon.tsx'
-import { ReviewPrevIcon } from '@/components/icons/ReviewPrevIcon'
+import { ReviewPrevIcon } from '@/components/icons/ReviewPrevIcon.tsx'
+import { SmallLocationIcon } from '@/components/icons/SmallLocationIcon.tsx'
 
 export {
+    SmallLocationIcon,
     CoworkingSpacesIcon,
     FacebookIcon,
     HotDeskIcon,
@@ -30,4 +33,5 @@ export {
     AccordionPlusIcon,
     AccordionMinusIcon,
     LocationIcon,
+    PlayIcon
 }

@@ -9,7 +9,7 @@ const SectionOfficeService = ({
     services,
 }: SectionServiceOfficePropType) => {
     return (
-        <section className={'container  py-12 text-center lg:px-32'}>
+        <section className={'container  py-12 text-center'}>
             <Typography
                 variant={'h4'}
                 color={'blue'}

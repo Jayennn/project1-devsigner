@@ -1,13 +1,12 @@
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/Atoms/Card"
 import Typography from "@/components/Atoms/Typography"
 import GeneralLayout from "@/components/Templates/GeneralLayout"
-import { LearnMoreIcon, LocationIcon } from "@/components/icons"
+import { LearnMoreIcon, SmallLocationIcon } from "@/components/icons"
 import { MapsIcon } from "@/components/icons/MapIcons"
 import person from "@/assets/contact/person.png"
 import companies from "@/assets/contact/companies.png"
 import Button from "@/components/Atoms/Button"
 import { Input } from "@/components/Atoms/Input"
-
 const ContactPage = () => {
     return (
         <>
@@ -49,7 +48,7 @@ const ContactPage = () => {
                                     <Typography className="font-semibold" as={"p"} variant={"p"} color={"blue"}>
                                         All locations
                                     </Typography>
-                                    <LocationIcon/>
+                                    <SmallLocationIcon />
                                 </CardFooter>
                             </Card>
                             <Card className="w-full md:max-w-xs md:w-[18rem]  px-4 py-2">

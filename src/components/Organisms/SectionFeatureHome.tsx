@@ -2,7 +2,7 @@ import Typography from '@/components/Atoms/Typography.tsx'
 import urlImage from '@/assets/hero/hero_feature_home.png'
 const SectionFeatureHome = () => {
     return (
-        <section className={'container py-12 lg:px-32'}>
+        <section className={'container py-12'}>
             <div
                 className={
                     'px-18 grid grid-cols-1 items-center gap-24 lg:grid-cols-2'

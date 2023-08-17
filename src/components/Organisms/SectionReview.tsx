@@ -3,7 +3,7 @@ import { ReviewNextIcon, ReviewPrevIcon } from "@/components/icons";
 import Typography from "../Atoms/Typography";
 import { SectionReviewPropsType } from "@/types/CustomPropsType";
 
-const SectionReview = ({Cards}: SectionReviewPropsType) => {
+const SectionReview = ({ Cards }: SectionReviewPropsType) => {
    return (
       <section className="mt-28">
          <div className="container grid">
@@ -21,9 +21,11 @@ const SectionReview = ({Cards}: SectionReviewPropsType) => {
                   </span>
                </div>
             </div>
-            <div className="py-8 flex relative overflow-hidden">
+            {/* Exapmle Review card soon using swiper */}
+            <div className="py-8 grid grid-cols-3 gap-6 relative overflow-hidden">
                {Cards.map(({ description, name, role, imageUrl }) => (
                   <ReviewCard
+                     key={name}
                      description={description}
                      imageUrl={imageUrl}
                      name={name}

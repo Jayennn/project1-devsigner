@@ -14,6 +14,8 @@ export default {
         extend: {
             colors: {
                 themeBlue: '#0192FE',
+                themeMediumBlue: 'rgba(1, 146, 254, 0.60)',
+                themeLightBlue: '#F0F6FF'
             },
             lineHeight: {
                 extraLoose: '62px',
