@@ -13,11 +13,11 @@ const ServiceCard = ({
         <Card className={`${isBordered && 'border-[1px] border-themeBlue'}`}>
             <CardHeader>{icon}</CardHeader>
             <CardContent>
-                <Typography variant={'h6'} className={'mb-4'}>
+                <Typography variant={'h4'} className={'mb-4'}>
                     {title}
                 </Typography>
                 <Typography
-                    variant={'h6'}
+                    variant={'h5'}
                     color={'secondary'}
                     className={'max-w-md font-light'}
                 >

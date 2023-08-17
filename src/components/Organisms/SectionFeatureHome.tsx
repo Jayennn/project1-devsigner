@@ -2,24 +2,24 @@ import { Typography } from '@/components/Atoms/Typography.tsx'
 import urlImage from '@/assets/hero/hero_feature_home.png'
 const SectionFeatureHome = () => {
     return (
-        <section className={'container py-12'}>
+        <section className={'container  lg:py-12'}>
             <div
                 className={
-                    'px-18 grid grid-cols-1 items-center gap-24 lg:grid-cols-2'
+                    'px-18 grid grid-cols-1 items-center  gap-24 lg:grid-cols-2'
                 }
             >
                 {/*LEFT IMAGE*/}
-                <div className={'ml-0'}>
+                <div className={'ml-0 order-1'}>
                     <img
                         src={urlImage}
                         alt={'Hero Feature Image'}
                         className={' max-h-[550px]'}
                     />
                 </div>
-                <div>
+                <div className={"order-2"}>
                     <Typography
                         variant={'h1'}
-                        className={'!leading-extraLoose'}
+                        className={'!leading-extraLoose text-center'}
                     >
                         A complete coworking space solution for your business
                         and team
@@ -27,7 +27,7 @@ const SectionFeatureHome = () => {
                     <div className={'my-12 space-y-6'}>
                         <div
                             className={
-                                'max-w-fit space-y-4 rounded-xl bg-white p-8 shadow-md'
+                                'max-w-fit space-y-4 rounded-xl bg-white p-8 shadow-md '
                             }
                         >
                             <Typography variant={'h4'}>
