@@ -1,25 +1,22 @@
 import Button from "@/components/Atoms/Button";
 import  Typography  from "@/components/Atoms/Typography";
 import { NAVBAR_LINKS } from "./data";
+import {cn} from "@/lib/utils.ts";
+import LogoIcon from "@/components/icons/LogoIcon.tsx";
 
-const Header = () => {
+const Header = ({theme = "default"} : {theme?: "blue" | "default"}) => {
+   const styles = {
+      bgColor: `${theme === 'blue' && "bg-themeBlue"}`,
+      color: `${theme === 'blue' && "!text-white"}`,
+      btnSignup: `${theme === 'blue' && "bg-white py-4 px-6 text-themeBlue"}`
+   }
    return (
       <>
-         <nav className="h-36 w-full flex items-center">
+         <nav className={cn("h-36 w-full flex items-center", styles.bgColor, styles.color) }>
             <div className="container pt-16 py-14 flex items-center justify-between">
                <div className="flex justify-center item-center">
-                  <svg width="30" height="35" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                     <g id="fs logo">
-                        <circle id="Ellipse 1755" cx="20" cy="20" r="20" fill="#0192FE" />
-                        <g id="Group 48097593">
-                           <rect id="Rectangle 1096" x="10.7461" y="10.7461" width="5.97015" height="5.97015" rx="1.19403" fill="#F9FAFF" />
-                           <rect id="Rectangle 1099" x="18.5078" y="10.7461" width="10.1493" height="5.97015" rx="1.19403" fill="#F9FAFF" />
-                           <rect id="Rectangle 1098" x="20.2988" y="18.5073" width="5.97015" height="5.97015" rx="1.19403" fill="#5BB9FF" />
-                           <rect id="Rectangle 1097" x="10.7461" y="18.5073" width="7.76119" height="10.7463" rx="1.19403" fill="#F9FAFF" />
-                        </g>
-                     </g>
-                  </svg>
-                  <Typography className="ml-3 uppercase text-[#0192FE]" variant="h4">
+                  <LogoIcon theme={theme}  />
+                  <Typography className={cn("ml-3 uppercase text-[#0192FE]",styles.color) } variant="h4">
                      Futurspace
                   </Typography>
                </div>
@@ -29,7 +26,7 @@ const Header = () => {
                   ))}
                   <li>
                      <Button
-                        className="text-sm"
+                        className={cn("text-sm",styles.btnSignup)}
                         variant={"default"}
                         size={"default"}>
                         Sign up
