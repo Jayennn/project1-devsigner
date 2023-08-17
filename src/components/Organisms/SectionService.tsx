@@ -9,17 +9,23 @@ const SectionService = ({
 }: SectionServicePropsType) => {
     return (
         <section className={'container  py-12'}>
-            <Typography variant={'h5'} color={'blue'} className={'mb-4'}>
+            <Typography
+                variant={'h5'}
+                color={'blue'}
+                className={'mb-4 uppercase'}
+            >
                 {title}
             </Typography>
             <Typography
                 variant={'h1'}
                 color={'primary'}
-                className={'max-w-6xl'}
+                className={
+                    'line max-w-4xl !text-[40px] font-[700] !leading-extraLoose'
+                }
             >
                 {subtitle}
             </Typography>
-            <div className={'my-12 grid grid-cols-1 gap-12 lg:grid-cols-3'}>
+            <div className={'my-16 grid grid-cols-1 gap-12 lg:grid-cols-3'}>
                 {services.map(({ icon, title, subtitle, isBordered }) => (
                     <ServiceCard
                         key={title}

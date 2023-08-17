@@ -28,7 +28,7 @@ const ServiceCard = ({
                 <Typography
                     variant={'p'}
                     color={'blue'}
-                    className={'flex gap-2 font-semibold'}
+                    className={'flex items-center gap-2 !text-lg font-semibold'}
                 >
                     Learn More
                     <LearnMoreIcon />
