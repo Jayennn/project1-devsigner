@@ -7,26 +7,27 @@ import AboutPage from './pages/about.tsx'
 import ContactPage from './pages/contact.tsx'
 import PricingPage from './pages/pricing.tsx'
 import SpacePage from './pages/space.tsx'
+import {NAVBAR_LINKS} from "@/components/Templates/data.ts";
 
 const router = createBrowserRouter([
     {
-        path: '/',
+        path: `/`,
         element: <HomePage />,
     },
     {
-        path: '/about',
+        path: `/${NAVBAR_LINKS[0]}`,
         element: <AboutPage />,
     },
     {
-        path: '/contact',
+        path: `/${NAVBAR_LINKS[4].replace(' ','-')}`,
         element: <ContactPage />,
     },
     {
-        path: '/pricing',
+        path: `/${NAVBAR_LINKS[1]}`,
         element: <PricingPage />,
     },
     {
-        path: '/space',
+        path: `/${NAVBAR_LINKS[3]}`,
         element: <SpacePage />,
     },
 ])

@@ -99,7 +99,7 @@ const AboutPage = () => {
             </section>
 
             <SectionPartner title={"Trusted by top companies and startups around the world"}/>
-            <SectionCTAAbout />
+            <SectionCTAAbout/>
 
             <SectionSubscribe
                 title={"Modern workspaces that fits your needs"}

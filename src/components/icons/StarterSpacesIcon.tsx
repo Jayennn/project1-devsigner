@@ -7,7 +7,7 @@ export const StarterSpacesIcon = () => (
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
     >
-        <circle cx="33.0364" cy="33.5364" r="33.0364" fill="url(#pattern1)" />
+        <circle cx="33.0364" cy="33.5364" r="33.0364" fill="url(#pattern1)"/>
         <defs>
             <pattern
                 id="pattern1"
@@ -15,7 +15,7 @@ export const StarterSpacesIcon = () => (
                 width="1"
                 height="1"
             >
-                <use xlinkHref="#image0_1_230" transform="scale(0.00757576)" />
+                <use xlinkHref="#image0_1_230" transform="scale(0.00757576)"/>
             </pattern>
             <image
                 id="image0_1_230"

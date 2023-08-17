@@ -1,4 +1,5 @@
-export const PlayIcon = () => <svg xmlns="http://www.w3.org/2000/svg" width="25" height="28" viewBox="0 0 25 28" fill="none">
+export const PlayIcon = () => <svg xmlns="http://www.w3.org/2000/svg" width="25" height="28" viewBox="0 0 25 28"
+                                   fill="none">
     <path
         d="M22.5 9.66987C25.8333 11.5944 25.8333 16.4056 22.5 18.3301L8.25 26.5574C4.91667 28.4819 0.749999 26.0762 0.749999 22.2272L0.75 5.77276C0.75 1.92376 4.91667 -0.48187 8.25 1.44263L22.5 9.66987Z"
         fill="white"/>

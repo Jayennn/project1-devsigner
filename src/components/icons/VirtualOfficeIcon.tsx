@@ -7,7 +7,7 @@ export const VirtualOfficeIcon = () => (
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
     >
-        <circle cx="33.0364" cy="33.24" r="33.0364" fill="url(#pattern3)" />
+        <circle cx="33.0364" cy="33.24" r="33.0364" fill="url(#pattern3)"/>
         <defs>
             <pattern
                 id="pattern3"
@@ -15,7 +15,7 @@ export const VirtualOfficeIcon = () => (
                 width="1"
                 height="1"
             >
-                <use xlinkHref="#image0_1_208" transform="scale(0.00757576)" />
+                <use xlinkHref="#image0_1_208" transform="scale(0.00757576)"/>
             </pattern>
             <image
                 id="image0_1_208"
