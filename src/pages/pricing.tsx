@@ -39,7 +39,8 @@ const PricingPage = () => {
                                 </Button>
                             </div>
                         </div>
-                        <div className="mt-10 grid justify-items-center gap-4 md:gap-0 grid-cols-1 md:grid-cols-3">
+                        <div className="mt-10 relative grid justify-items-center gap-4 md:gap-0 grid-cols-1 md:grid-cols-3">
+                            <div className="w-full h-full absolute -z-10 blur-3xl bg-[#F0F0F0] "/>
                             <Card className="h-fit max-w-xs">
                                 <CardHeader className="grid gap-3">
                                     <img className="max-w-[2rem]" src={logo1} alt="logo-1" />
@@ -137,7 +138,8 @@ const PricingPage = () => {
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit cursus commodo at sit mi sed <br /> gravida et imperdiet sagittis euismod tortor fringilla amet.
                             </Typography>
                         </div>
-                        <div className="mt-10 grid place-content-center ">
+                        <div className="relative mt-10 grid place-content-center ">
+                            <div className="w-full h-full absolute -z-10 blur-3xl bg-[#F0F0F0] " />
                             <div className="max-w-2xl grid gap-5">
                                 <div className="rounded-xl bg-white px-6 py-7 flex items-center justify-between gap-8">
                                     <Typography as={"h6"} variant={"h6"} color={"primary"}>

@@ -33,7 +33,8 @@ const SectionOfficeService = ({
             >
                 {description}
             </Typography>
-            <div className={'my-16 grid grid-cols-1 gap-12  lg:grid-cols-3 '}>
+            <div className={'my-16 relative grid grid-cols-1 gap-12  lg:grid-cols-3 '}>
+                <div className="w-full h-full absolute -z-10 blur-3xl bg-[#F0F0F0]" />
                 {services.map(({ imageUrl, title, subtitle },index) => (
                     <ServiceOfficeCard
                         key={index}

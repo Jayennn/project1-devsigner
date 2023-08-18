@@ -24,7 +24,8 @@ const SectionFeatureHome = () => {
                         A complete coworking space solution for your business
                         and team
                     </Typography>
-                    <div className={'my-12 space-y-6'}>
+                    <div className={'my-12 relative space-y-6'}>
+                        <div className="w-full h-full absolute -z-10 blur-3xl bg-[#F0F0F0]" />
                         <div
                             className={
                                 'max-w-fit space-y-4 rounded-xl bg-white p-8 shadow-md '

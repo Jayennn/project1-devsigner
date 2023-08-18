@@ -32,7 +32,8 @@ const ContactPage = () => {
                         <div className="max-w-6xl mx-auto">
                             <MapsIcon />
                         </div>
-                        <div className="mt-16 gap-4 grid md:gap-0 grid-cols-1 md:grid-cols-3 place-items-center">
+                        <div className="mt-16 relative gap-4 grid md:gap-0 grid-cols-1 md:grid-cols-3 place-items-center">
+                            <div className="w-full h-full absolute -z-10 blur-3xl bg-[#F0F0F0]/60 " />
                             <Card className="w-full md:max-w-xs md:w-[18rem] px-4 py-2">
                                 <CardHeader>
                                     <Typography as="h6" variant={"h6"} color={"primary"}>
@@ -139,14 +140,15 @@ const ContactPage = () => {
                                     Choose from any of our 3000 locations. Get a free quote!
                                 </Typography>
                             </div>
-                            <form action="#" className="mt-10 grid gap-4">
-                                <Input placeholder="First Name"/>
-                                <Input placeholder="Last Name" />
+                            <form action="#" className="mt-10 relative grid gap-4">
+                                <div className="w-full h-full absolute -z-10 blur-3xl bg-[#F0F0F0]" />
+                                <Input className="bg-[#FFFFFF]" placeholder="First Name"/>
+                                <Input className="bg-[#FFFFFF]" placeholder="Last Name" />
                                 <div className="grid grid-cols-2 gap-4">
-                                    <Input placeholder="Your Email"/>
-                                    <Input placeholder="Your Email"/>
+                                    <Input className="bg-[#FFFFFF]" placeholder="Your Email"/>
+                                    <Input className="bg-[#FFFFFF]" placeholder="Your Email"/>
                                 </div>
-                                <Input placeholder="Message Email" />
+                                <Input className="bg-[#FFFFFF]" placeholder="Message Email" />
                                 <Button variant={"default"} size={"lg"}>
                                     Submit
                                 </Button>
