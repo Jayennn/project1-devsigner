@@ -20,6 +20,7 @@ const SectionFeatureHome = () => {
                 <div className={"order-2"}>
                     <Typography
                         variant={'h1'}
+                        as={"h1"}
                         className={'!leading-extraLoose text-center'}
                     >
                         A complete coworking space solution for your business
@@ -31,7 +32,7 @@ const SectionFeatureHome = () => {
                                 'max-w-fit space-y-4 rounded-xl bg-white p-8 shadow-none '
                             }
                         >
-                            <Typography variant={'h4'}>
+                            <Typography as={"h4"} variant={'h4'}>
                                 Discover a busines location
                             </Typography>
                             <Typography
@@ -48,7 +49,7 @@ const SectionFeatureHome = () => {
                                 'max-w-fit rounded-xl bg-white p-8 shadow-none'
                             }
                         >
-                            <Typography variant={'h4'}>
+                            <Typography variant={'h4'} as={"h4"}>
                                 The most efficient workspace solutions
                             </Typography>
                         </div>
@@ -57,7 +58,7 @@ const SectionFeatureHome = () => {
                                 'max-w-fit rounded-xl bg-white p-8 shadow-none'
                             }
                         >
-                            <Typography variant={'h4'} className={'pr-12'}>
+                            <Typography variant={'h4'} as={"h4"} className={'pr-12'}>
                                 Design your productive space
                             </Typography>
                         </div>

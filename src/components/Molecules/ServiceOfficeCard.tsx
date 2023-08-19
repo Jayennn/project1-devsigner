@@ -16,7 +16,7 @@ const ServiceOfficeCard = ({
                 <img src={imageUrl} alt="office"/>
             </CardHeader>
             <CardContent>
-                <Typography variant="h4" color="primary">
+                <Typography as={"h4"} variant="h4" color="primary">
                     {title}
                 </Typography>
                 <Typography

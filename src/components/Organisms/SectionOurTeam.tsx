@@ -9,6 +9,7 @@ const SectionOurTeam = ({title, subtitle, description, teams}: SectionOurTeamPro
         <div className={"text-center"}>
             <Typography
                 variant={'h5'}
+                as={"h5"}
                 color={'blue'}
                 className={'font-semibold uppercase'}
             >
@@ -16,6 +17,7 @@ const SectionOurTeam = ({title, subtitle, description, teams}: SectionOurTeamPro
             </Typography>
             <Typography
                 variant={'h2'}
+                as={"h2"}
                 color={'primary'}
                 className={
                     'mx-auto my-6 !text-[43px] !font-[700]  !leading-extraLoose'
@@ -25,6 +27,7 @@ const SectionOurTeam = ({title, subtitle, description, teams}: SectionOurTeamPro
             </Typography>
             <Typography
                 variant={'h6'}
+                as={"h6"}
                 color={'secondary'}
                 className={'mx-auto  max-w-4xl font-light'}
             >

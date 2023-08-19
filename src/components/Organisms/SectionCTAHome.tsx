@@ -9,7 +9,7 @@ const SectionCTAHome = () => {
         <Card
             className={"bg-themeLightBlue w-full pl-24 py-11 pr-12 flex justify-between gap-4 !shadow-none !border-0 rounded-2xl"}>
             <div className={"space-y-6 mt-4"}>
-                <Typography variant={"h2"} className={"max-w-lg !leading-relaxed font-extrabold"}>Customised workspace
+                <Typography variant={"h2"} as={"h2"} className={"max-w-lg !leading-relaxed font-extrabold"}>Customised workspace
                     for rent wherever you need it</Typography>
                 <Button className={"!py-6 text-lg"}>Book Tour</Button>
             </div>
@@ -19,10 +19,7 @@ const SectionCTAHome = () => {
                     <PlayIcon  />
                 </div>
             </div>
-
         </Card>
-
-
     </section>;
 }
 

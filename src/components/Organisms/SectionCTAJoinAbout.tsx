@@ -4,7 +4,7 @@ import ArrowRightIcon from "@/components/icons/ArrowRightIcon.tsx";
 const SectionCTAJoinAbout = () => {
     return <section className={"container"}>
         <div className={"flex bg-themeLightBlue py-20 gap-60 px-12 rounded-xl"}>
-            <Typography variant={"h2"}>
+            <Typography variant={"h2"} as={"h2"}>
                 Join our team
             </Typography>
             <div className={"space-y-6"}>

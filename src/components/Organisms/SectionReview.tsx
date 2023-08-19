@@ -24,15 +24,8 @@ const SectionReview = ({ Cards }: SectionReviewPropsType) => {
             </div>
             {/* Example Review card soon using swiper */}
             <div className="py-8 grid grid-cols-3 gap-6 relative overflow-hidden">
-               {Cards.map(({ description, name, role, imageUrl }) => (
-                  <ReviewCard
-                     key={name}
-                     description={description}
-                     imageUrl={imageUrl}
-                     name={name}
-                     role={role}
-                     
-                  />
+               {Cards.map((props,index) => (
+                  <ReviewCard {...props} key={index}/>
                ))}
             </div>
          </div>

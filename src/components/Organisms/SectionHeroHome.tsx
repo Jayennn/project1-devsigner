@@ -12,12 +12,14 @@ const SectionHeroHome = () => {
                 <div>
                     <Typography
                         variant={'h2'}
-                        className={'!text-2xl md:!text-4xl max-w-[230px] md:max-w-xs font-extrabold !leading-snug'}
+                        as={"h2"}
+                        className={' max-w-[230px] md:max-w-xs font-extrabold !leading-snug '}
                     >
                         The workspace that works for you & your team
                     </Typography>
                     <Typography
                         variant={'h6'}
+                        as={"h6"}
                         color={'secondary'}
                         className={'text-[10px] md:text-xl mb-6 lg:mb-16 mt-4 md:mt-8 max-w-[280px] md:max-w-lg font-medium'}
                     >

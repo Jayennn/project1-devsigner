@@ -14,6 +14,7 @@ const SectionOfficeService = ({
             <div className={"container"}>
                 <Typography
                     variant={'h4'}
+                    as={"h4"}
                     color={'blue'}
                     className={'font-semibold uppercase'}
                 >
@@ -21,6 +22,7 @@ const SectionOfficeService = ({
                 </Typography>
                 <Typography
                     variant={'h2'}
+                    as={"h2"}
                     color={'primary'}
                     className={
                         'mx-auto my-6 max-w-[690px] !text-[43px] !font-[700]  !leading-extraLoose'
@@ -30,20 +32,14 @@ const SectionOfficeService = ({
                 </Typography>
                 <Typography
                     variant={'h6'}
+                    as={"h6"}
                     color={'secondary'}
                     className={'mx-auto  max-w-4xl font-medium'}
                 >
                     {description}
                 </Typography>
                 <div className={'my-16 grid grid-cols-1 gap-12  lg:grid-cols-3 '}>
-                    {services.map(({imageUrl, title, subtitle}, index) => (
-                        <ServiceOfficeCard
-                            key={index}
-                            imageUrl={imageUrl}
-                            title={title}
-                            subtitle={subtitle}
-                        />
-                    ))}
+                    {services.map((props, index) => <ServiceOfficeCard key={index} {...props} />)}
                 </div>
             </div>
         </section>

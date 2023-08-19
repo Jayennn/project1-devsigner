@@ -5,12 +5,12 @@ const SectionHeroAbout = () => {
         <section className={"bg-themeBlue py-12"}>
             <div className={"container"}>
                 <div className={"w-full flex justify-between text-white pb-24"}>
-                    <Typography variant={"h1"} className={"text-white max-w-xs"}>About our company</Typography>
+                    <Typography variant={"h1"} as={"h1"} className={"text-white max-w-xs"}>About our company</Typography>
                     <div className={"max-w-lg space-y-6"}>
-                        <Typography variant={"h6"} className={"text-white font-light"}>Our space is more than a
+                        <Typography variant={"h6"} as={"h6"} className={"text-white font-light"}>Our space is more than a
                             shared office. It is a meeting ground for creatives and
                             teams</Typography>
-                        <Typography variant={"h6"} className={"text-white font-light"}>
+                        <Typography variant={"h6"} as={"h6"} className={"text-white font-light"}>
                             Find focus and clarity space to do the things you need to do to grow your business in
                             New York. Book by the month, daily or by the hour.
                         </Typography>

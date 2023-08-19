@@ -6,7 +6,7 @@ const ItemTeamAbout = ({name, position, imageUrl}: ItemTeamPropsType) =>
         className={"text-center"}
     >
         <img src={imageUrl} alt={"Team Image"} className={"rounded-xl"}/>
-        <Typography variant={"h5"} className={"my-4"}>
+        <Typography as={"h5"} variant={"h5"} className={"my-4"}>
             {name}
         </Typography>
         <Typography variant={"p"}>

@@ -4,7 +4,7 @@ import ItemDataAbout from "@/components/Molecules/ItemDataAbout.tsx";
 const SectionDataAbout = () => {
     return (
         <section className={"container pt-24"}>
-            <Typography variant={"h2"} className={"max-w-4xl !text-[43px] !leading-snug"}>
+            <Typography variant={"h2"} as={"h2"} className={"max-w-4xl !text-[43px] !leading-snug"}>
                 Our space is more than a shared office.
                 It is a meeting ground for creatives and teams
             </Typography>
