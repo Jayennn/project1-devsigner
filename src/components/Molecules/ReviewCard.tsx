@@ -5,7 +5,7 @@ import { ReviewCardPropsType } from "@/types/CustomPropsType";
 
 const ReviewCard = ({description, name, role, imageUrl}: ReviewCardPropsType) => {
    return (
-      <Card className="max-w-sm h-fit">
+      <Card className="max-w-sm h-fit !shadow-none">
          <CardContent className="px-12 py-8 grid gap-6">
             <StarsIcon />
             <Typography as={"p"}>

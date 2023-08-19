@@ -10,7 +10,7 @@ const ServiceCard = ({
     isBordered,
 }: ServiceCardPropsType) => {
     return (
-        <Card className={`${isBordered && 'border-[1px] border-themeBlue'}`}>
+        <Card className={`${isBordered && 'border-[1px] border-themeBlue'} !shadow-none`}>
             <CardHeader>{icon}</CardHeader>
             <CardContent>
                 <Typography variant={'h4'} className={'mb-4'}>

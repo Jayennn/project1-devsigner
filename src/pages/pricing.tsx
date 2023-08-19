@@ -6,7 +6,7 @@ import logo2 from "@/assets/price/logo2.png";
 import logo3 from "@/assets/price/logo3.png";
 import person from "@/assets/price/person.png";
 import ChecklistIcon from "@/components/icons/ChecklistIcon";
-import { GOLD_PLANS, SILVER_PLANS } from "@/types/data";
+import { GOLD_PLANS, SILVER_PLANS } from "@/types/data.tsx";
 import GeneralLayout from "@/components/Templates/GeneralLayout";
 import { AccordionPlusIcon } from "@/components/icons";
 import { Input } from "@/components/Atoms/Input";

@@ -1,7 +1,9 @@
-import { Card, CardContent, CardFooter, CardHeader } from '../Atoms/Card.tsx'
-import { LearnMoreIcon } from '../icons/LearnMoreIcon.tsx'
+
+
 import Typography from '@/components/Atoms/Typography.tsx'
 import { ServiceOfficeCardPropsType } from '@/types/CustomPropsType.tsx'
+import {LearnMoreIcon} from "@/components/icons";
+import {Card, CardContent, CardFooter, CardHeader} from "@/components/Atoms/Card.tsx";
 
 const ServiceOfficeCard = ({
     title,
@@ -9,9 +11,9 @@ const ServiceOfficeCard = ({
     imageUrl,
 }: ServiceOfficeCardPropsType) => {
     return (
-        <Card className=" gap-7 px-4 py-2 text-left">
+        <Card className=" gap-7 px-4 py-2 text-left !shadow-none">
             <CardHeader className={''}>
-                <img src={imageUrl} alt="office" />
+                <img src={imageUrl} alt="office"/>
             </CardHeader>
             <CardContent>
                 <Typography variant="h4" color="primary">
@@ -32,11 +34,11 @@ const ServiceOfficeCard = ({
                     className={'flex items-center gap-2 font-semibold'}
                 >
                     Learn more
-                    <LearnMoreIcon />
+                    <LearnMoreIcon/>
                 </Typography>
             </CardFooter>
         </Card>
-    )
+    );
 }
 
 export default ServiceOfficeCard

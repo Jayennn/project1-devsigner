@@ -9,6 +9,7 @@ const SectionService = ({
 }: SectionServicePropsType) => {
     return (
         <section className={'container py-12'}>
+            <div className={"bg-gradient-to-t bg-[#f3f3f3] absolute w-full h-full -z-10 blur-3xl"}/>
             <Typography
                 variant={'h5'}
                 color={'blue'}

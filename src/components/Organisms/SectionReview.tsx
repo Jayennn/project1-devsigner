@@ -5,7 +5,8 @@ import { SectionReviewPropsType } from "@/types/CustomPropsType";
 
 const SectionReview = ({ Cards }: SectionReviewPropsType) => {
    return (
-      <section className="mt-28">
+      <section className="mt-28 relative">
+         <div className={"bg-gradient-to-t bg-[#f3f3f3] absolute w-full h-full -z-10 blur-3xl"}/>
          <div className="container grid">
             <div className="grid">
                <Typography className="text-base md:text-lg md:leading-tight uppercase" as={"h1"} variant={"h1"} color={"blue"}>
@@ -21,7 +22,7 @@ const SectionReview = ({ Cards }: SectionReviewPropsType) => {
                   </span>
                </div>
             </div>
-            {/* Exapmle Review card soon using swiper */}
+            {/* Example Review card soon using swiper */}
             <div className="py-8 grid grid-cols-3 gap-6 relative overflow-hidden">
                {Cards.map(({ description, name, role, imageUrl }) => (
                   <ReviewCard

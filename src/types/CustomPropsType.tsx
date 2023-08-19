@@ -30,6 +30,19 @@ export type SectionReviewPropsType = {
     Cards: ReviewCardPropsType[]
 }
 
+export type ItemTeamPropsType = {
+    name: string,
+    position: string,
+    imageUrl: string
+}
+
+export type SectionOurTeamPropType = {
+    title: string;
+    subtitle: string
+    description: string,
+    teams: ItemTeamPropsType[]
+}
+
 
 export type ReviewCardPropsType = {
     description: string

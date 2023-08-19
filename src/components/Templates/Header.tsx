@@ -6,7 +6,7 @@ import LogoIcon from "@/components/icons/LogoIcon.tsx";
 import {Link, useLocation} from "react-router-dom";
 
 const Header = ({theme = "default"}: { theme?: "blue" | "default" }) => {
-    const location = useLocation();
+    const {pathname} = useLocation();
     const styles = {
         bgColor: `${theme === 'blue' && "bg-themeBlue"}`,
         color: `${theme === 'blue' && "!text-white"}`,
@@ -25,7 +25,7 @@ const Header = ({theme = "default"}: { theme?: "blue" | "default" }) => {
                     </div>
                     <ul className="flex items-center gap-7">
                         {NAVBAR_LINKS.map((link) => (
-                            <li className={`${location.pathname.replace('/', '') === link.toLowerCase().replace(' ',"-") && "font-extrabold"} hidden md:block text-sm`}
+                            <li className={`${pathname.replace('/', '') === link.toLowerCase().replace(' ',"-") && "font-extrabold"} hidden md:block text-sm`}
                                 key={link}>
                                 <Link to={`/${link.toLowerCase().replace(' ',"-")}`}>
                                     {link}

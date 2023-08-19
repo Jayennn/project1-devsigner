@@ -2,7 +2,7 @@ import Typography from "@/components/Atoms/Typography.tsx";
 import Button from "@/components/Atoms/Button.tsx";
 import {LocationIcon} from "@/components/icons";
 import ItemLocation from "@/components/Molecules/ItemLocation.tsx";
-import imageUrl from "@/assets/hero/hero_location_home.jpg"
+import imageUrl from "@/assets/hero/hero_location_home.png"
 
 const SectionLocationHome = () => {
     return <section className={"container"}>

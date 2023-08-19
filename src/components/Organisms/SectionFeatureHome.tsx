@@ -2,7 +2,8 @@ import Typography from '@/components/Atoms/Typography.tsx'
 import urlImage from '@/assets/hero/hero_feature_home.png'
 const SectionFeatureHome = () => {
     return (
-        <section className={'container  lg:py-12'}>
+        <section className={'container  lg:py-12 relative'}>
+            <div className={"bg-gradient-to-t bg-[#f3f3f3] absolute w-full h-full -z-10 blur-3xl"}/>
             <div
                 className={
                     'px-18 grid grid-cols-1 items-center  gap-24 lg:grid-cols-2'
@@ -27,7 +28,7 @@ const SectionFeatureHome = () => {
                     <div className={'my-12 space-y-6'}>
                         <div
                             className={
-                                'max-w-fit space-y-4 rounded-xl bg-white p-8 shadow-md '
+                                'max-w-fit space-y-4 rounded-xl bg-white p-8 shadow-none '
                             }
                         >
                             <Typography variant={'h4'}>
@@ -44,7 +45,7 @@ const SectionFeatureHome = () => {
                         </div>
                         <div
                             className={
-                                'max-w-fit rounded-xl bg-white p-8 shadow-md'
+                                'max-w-fit rounded-xl bg-white p-8 shadow-none'
                             }
                         >
                             <Typography variant={'h4'}>
@@ -53,7 +54,7 @@ const SectionFeatureHome = () => {
                         </div>
                         <div
                             className={
-                                'max-w-fit rounded-xl bg-white p-8 shadow-md'
+                                'max-w-fit rounded-xl bg-white p-8 shadow-none'
                             }
                         >
                             <Typography variant={'h4'} className={'pr-12'}>

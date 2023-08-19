@@ -3,7 +3,7 @@ import Button from '@/components/Atoms/Button.tsx'
 import urlImage from '@/assets/hero/hero_home.png'
 const SectionHeroHome = () => {
     return (
-        <section className={'container py-12'}>
+        <section className={'container pb-12'}>
             <div
                 className={
                     'grid grid-cols-1 items-center gap-12 md:grid-cols-2'
