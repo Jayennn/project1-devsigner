@@ -1,6 +1,6 @@
 import Typography from "@/components/Atoms/Typography.tsx";
 import SectionOfficeService from "@/components/Organisms/SectionOfficeService.tsx";
-import {ServiceOfficeCardPropsType} from "@/types/CustomPropsType.tsx";
+import { ServiceOfficeCardPropsType } from "@/types/CustomPropsType.tsx";
 import image from "@/assets/card/Office.png";
 import SectionOurTeam from "@/components/Organisms/SectionOurTeam.tsx";
 import SectionPartner from "@/components/Organisms/SectionPartner.tsx";
@@ -8,7 +8,7 @@ import ArrowRightIcon from "@/components/icons/ArrowRightIcon.tsx";
 import SectionSubscribe from "@/components/Organisms/SectionSubscribe.tsx";
 import SectionCTAAbout from "@/components/Organisms/SectionCTAAbout.tsx";
 import AboutLayout from "@/components/Templates/AboutLayout.tsx";
-
+import aboutHero from "@/assets/hero/about_hero.png";
 const serviceOffices: ServiceOfficeCardPropsType[] = [
     {
         title: 'Office Space',
@@ -33,7 +33,22 @@ const AboutPage = () => {
     return (
         <AboutLayout>
             <section className={"bg-themeBlue py-24"}>
-
+                <div className="container grid">
+                    <div className="flex justify-between">
+                        <Typography className="max-w-sm" color={"white"} as={'h1'} variant={"h1"} >
+                            About our company
+                        </Typography>
+                        <div className="grid max-w-md gap-4">
+                            <Typography className="font-normal" color={"white"} as={"h6"} variant={"h6"}>
+                                Our space is more than a shared office. It is a meeting ground for creatives and teams
+                            </Typography>
+                            <Typography className="font-normal" color={"white"} as={"h6"} variant={"h6"}>
+                                Find focus and clarity space to do the things you need to do to grow your business in New York. Book by the month, daily or by the hour.
+                            </Typography>
+                        </div>
+                    </div>
+                    <img className="pt-28" src={aboutHero} alt="hero-image" />
+                </div>
             </section>
             <section className={"container py-24"}>
                 <Typography variant={"h1"} className={"max-w-5xl"}>
@@ -44,20 +59,20 @@ const AboutPage = () => {
                     Find focus and clarity space to do the things you need to do to grow your business in New York. Book
                     by the month, daily or by the hour.
                 </Typography>
-                <hr className={"my-12"}/>
+                <hr className={"my-12"} />
 
                 <div className={"grid grid-cols-1 md:grid-cols-3 my-12 gap-16"}>
                     <Item title={"3,000+"}
-                          subtitle={"Happy Members"}
-                          description={"We offer offices for lease by the day, by the week, or by the year."}
+                        subtitle={"Happy Members"}
+                        description={"We offer offices for lease by the day, by the week, or by the year."}
                     />
                     <Item title={"12+"}
-                          subtitle={"Locations across the globe"}
-                          description={"We offer offices for lease by the day, by the week, or by the year."}
+                        subtitle={"Locations across the globe"}
+                        description={"We offer offices for lease by the day, by the week, or by the year."}
                     />
                     <Item title={"10+"}
-                          subtitle={"Years of service"}
-                          description={"We offer offices for lease by the day, by the week, or by the year."}
+                        subtitle={"Years of service"}
+                        description={"We offer offices for lease by the day, by the week, or by the year."}
                     />
 
                 </div>
@@ -65,9 +80,9 @@ const AboutPage = () => {
 
             </section>
             <SectionOfficeService title={"Why Serviced Office"}
-                                  subtitle={"We've helped thousands of fast-growing startups and teams"}
-                                  description={"Grow without restriction. By giving you space that can be changed as your business grows. Only pay for the space you use with everything you need to be included in one price."}
-                                  services={serviceOffices}
+                subtitle={"We've helped thousands of fast-growing startups and teams"}
+                description={"Grow without restriction. By giving you space that can be changed as your business grows. Only pay for the space you use with everything you need to be included in one price."}
+                services={serviceOffices}
             />
             <SectionOurTeam
                 title={"Our Leadership team"}
@@ -92,14 +107,14 @@ const AboutPage = () => {
                             className={'flex items-center gap-2 font-extrabold'}
                         >
                             Explore jobs
-                            <ArrowRightIcon/>
+                            <ArrowRightIcon />
                         </Typography>
                     </div>
                 </div>
             </section>
 
-            <SectionPartner title={"Trusted by top companies and startups around the world"}/>
-            <SectionCTAAbout/>
+            <SectionPartner title={"Trusted by top companies and startups around the world"} />
+            <SectionCTAAbout />
 
             <SectionSubscribe
                 title={"Modern workspaces that fits your needs"}
@@ -110,7 +125,7 @@ const AboutPage = () => {
     )
 }
 
-const Item = ({title, subtitle, description}: { title: string, subtitle: string, description: string }) => <div>
+const Item = ({ title, subtitle, description }: { title: string, subtitle: string, description: string }) => <div>
     <Typography variant={"h1"} color={"blue"} className={"font-extrabold"}>
         {title}
     </Typography>
