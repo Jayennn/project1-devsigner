@@ -14,6 +14,7 @@ const SectionOfficeService = ({
             <div className={"container"}>
                 <Typography
                     variant={'h4'}
+                    as={"h4"}
                     color={'blue'}
                     className={'font-semibold uppercase'}
                 >
@@ -21,9 +22,10 @@ const SectionOfficeService = ({
                 </Typography>
                 <Typography
                     variant={'h2'}
+                    as={"h2"}
                     color={'primary'}
                     className={
-                        'mx-auto my-6 max-w-[690px] !text-[43px] !font-[700]  !leading-extraLoose'
+                        'mx-auto my-6 max-w-[690px]'
                     }
                 >
                     {subtitle}
