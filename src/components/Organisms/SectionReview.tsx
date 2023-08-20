@@ -10,11 +10,7 @@ import { WheelGesturesPlugin } from 'embla-carousel-wheel-gestures'
 import { useCallback, useEffect, useState } from "react";
 
 const SectionReview = ({ Cards }: SectionReviewPropsType) => {
-   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-   const [scrollSnaps, setScrollSnaps] = useState<number[]>([])
-   // eslint-disable-next-line @typescript-eslint/no-unused-vars
    const [prevBtnDisabled, setPrevBtnDisabled] = useState(true)
-   // eslint-disable-next-line @typescript-eslint/no-unused-vars
    const [nextBtnDisabled, setNextBtnDisabled] = useState(true)
 
    const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -40,9 +36,7 @@ const SectionReview = ({ Cards }: SectionReviewPropsType) => {
       [emblaApi]
    )
 
-   const onInit = useCallback((emblaApi: EmblaCarouselType) => {
-      setScrollSnaps(emblaApi.scrollSnapList())
-   }, [])
+
 
    const onSelect = useCallback((emblaApi: EmblaCarouselType) => {
       setPrevBtnDisabled(!emblaApi.canScrollPrev())
@@ -51,13 +45,11 @@ const SectionReview = ({ Cards }: SectionReviewPropsType) => {
 
    useEffect(() => {
       if (!emblaApi) return
-      
-      onInit(emblaApi)
+
       onSelect(emblaApi)
-      emblaApi.on('reInit', onInit)
       emblaApi.on('reInit', onSelect)
       emblaApi.on('select', onSelect)
-   }, [emblaApi, onInit, onSelect])
+   }, [emblaApi, onSelect])
 
    return (
       <section className="relative mt-28">
@@ -71,14 +63,18 @@ const SectionReview = ({ Cards }: SectionReviewPropsType) => {
                   <Typography className="md:leading-tight" as={"h1"} variant={"h1"} color={"primary"}>
                      What Our Members Say
                   </Typography>
-                  <span className="hidden md:inline-flex gap-2">
-                     <ReviewPrevIcon className="cursor-pointer" onClick={scrollPrev}/>
-                     <ReviewNextIcon className="cursor-pointer" onClick={scrollNext}/>
+                  <span className="hidden md:inline-flex gap-2"> 
+                     <button className="cursor-pointer" onClick={scrollPrev} disabled={prevBtnDisabled}>
+                        <ReviewPrevIcon/>
+                     </button>
+                     <button className="cursor-pointer" onClick={scrollNext} disabled={nextBtnDisabled}>
+                        <ReviewNextIcon/>
+                     </button>
+                        
                   </span>
                </div>
             </div>
             {/* Example Review card soon using swiper */}
-            { }
             <div className="overflow-hidden" ref={emblaRef}>
                <div className="py-8 mt-12 flex pl-4 gap-4 touch-pan-y">
                   {Cards.map((props,index) => (
