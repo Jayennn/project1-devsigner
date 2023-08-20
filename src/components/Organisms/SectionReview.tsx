@@ -5,10 +5,11 @@ import { SectionReviewPropsType } from "@/types/CustomPropsType";
 
 const SectionReview = ({ Cards }: SectionReviewPropsType) => {
    return (
-      <section className="mt-28">
+      <section className="relative mt-28">
+         <div className={"bg-gradient-to-t bg-[#f3f3f3] absolute w-full h-full -z-10 blur-3xl"}/>
          <div className="container grid">
             <div className="grid">
-               <Typography className="text-base md:text-lg md:leading-tight uppercase" as={"h1"} variant={"h1"} color={"blue"}>
+               <Typography className="text-base uppercase md:text-lg md:leading-tight" as={"h1"} variant={"h1"} color={"blue"}>
                   Contact us
                </Typography>
                <div className="flex items-center justify-between">
@@ -21,9 +22,9 @@ const SectionReview = ({ Cards }: SectionReviewPropsType) => {
                   </span>
                </div>
             </div>
-            {/* Exapmle Review card soon using swiper */}
-            <div className="py-8 relative grid grid-cols-3 gap-6  overflow-hidden">
-               <div className="w-full h-full absolute -z-10 blur-3xl bg-[#F0F0F0]" />
+            {/* Example Review card soon using swiper */}
+            <div className="relative grid grid-cols-3 gap-6 py-8 overflow-hidden">
+
                {Cards.map(({ description, name, role, imageUrl }) => (
                   <ReviewCard
                      key={name}

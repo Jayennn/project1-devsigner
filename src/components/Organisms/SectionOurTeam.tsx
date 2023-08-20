@@ -1,16 +1,14 @@
 import Typography from "@/components/Atoms/Typography.tsx";
-import imageUrl from "@/assets/team/matt.jpg"
+import ItemTeamAbout from "@/components/Molecules/ItemTeamAbout.tsx";
+import {SectionOurTeamPropType} from "@/types/CustomPropsType.tsx";
 
-type OurTeamPropType = {
-    title: string;
-    subtitle: string
-    description: string
-}
-const SectionOurTeam = ({title, subtitle, description}: OurTeamPropType) => {
-    return <section className={"container py-24"}>
+
+const SectionOurTeam = ({title, subtitle, description, teams}: SectionOurTeamPropType) => {
+    return <section className={"container pb-24"}>
+        {/*HEADING*/}
         <div className={"text-center"}>
             <Typography
-                variant={'h4'}
+                variant={'h5'}
                 color={'blue'}
                 className={'font-semibold uppercase'}
             >
@@ -28,34 +26,20 @@ const SectionOurTeam = ({title, subtitle, description}: OurTeamPropType) => {
             <Typography
                 variant={'h6'}
                 color={'secondary'}
-                className={'mx-auto  max-w-4xl font-medium'}
+                className={'mx-auto  max-w-4xl font-light'}
             >
                 {description}
             </Typography>
         </div>
 
+        {/*TEAMS*/}
         <div className={"grid grid-cols-1 lg:grid-cols-5 gap-16 mt-12"}>
-            <ItemTeam />
-            <ItemTeam />
-            <ItemTeam />
-            <ItemTeam />
-            <ItemTeam />
+            {
+                teams.map((props) => <ItemTeamAbout {...props}/>)
+            }
         </div>
-
-
     </section>
 }
-
-const ItemTeam = () =>   <div className={"text-center"}>
-    <img src={imageUrl} alt={"Team Image"} className={"rounded-xl"} />
-    <Typography variant={"h5"} className={"my-4"} >
-        John Carter
-    </Typography>
-    <Typography variant={"p"}>
-        CEO & Founder
-    </Typography>
-</div>
-
 
 
 export default SectionOurTeam
