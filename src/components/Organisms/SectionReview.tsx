@@ -6,7 +6,6 @@ import useEmblaCarousel, {
    EmblaCarouselType,
 } from 'embla-carousel-react';
 import AutoPlay from "embla-carousel-autoplay"
-import { WheelGesturesPlugin } from 'embla-carousel-wheel-gestures'
 import { useCallback, useEffect, useState } from "react";
 
 const SectionReview = ({ Cards }: SectionReviewPropsType) => {
@@ -23,7 +22,7 @@ const SectionReview = ({ Cards }: SectionReviewPropsType) => {
             jump: true,
          }
       ),
-      WheelGesturesPlugin()
+      
    ]);
 
    const scrollPrev = useCallback(
