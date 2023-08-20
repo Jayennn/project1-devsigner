@@ -12,7 +12,7 @@ const SectionReview = ({ Cards }: SectionReviewPropsType) => {
                <Typography className="text-base md:text-lg md:leading-tight uppercase" as={"h1"} variant={"h1"} color={"blue"}>
                   Contact us
                </Typography>
-               <div className="flex items-center justify-between">
+               <div className="flex mt-4 items-center justify-between">
                   <Typography className="md:leading-tight" as={"h1"} variant={"h1"} color={"primary"}>
                      What Our Members Say
                   </Typography>
@@ -23,7 +23,7 @@ const SectionReview = ({ Cards }: SectionReviewPropsType) => {
                </div>
             </div>
             {/* Example Review card soon using swiper */}
-            <div className="py-8 grid grid-cols-3 gap-6 relative overflow-hidden">
+            <div className="py-8 mt-12 inline-flex flex-row snap-x snap-mandatory lg:grid lg:grid-cols-3 gap-6 relative overflow-auto lg:overflow-hidden">
                {Cards.map((props,index) => (
                   <ReviewCard {...props} key={index}/>
                ))}

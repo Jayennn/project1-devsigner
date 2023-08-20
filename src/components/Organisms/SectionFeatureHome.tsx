@@ -2,26 +2,26 @@ import Typography from '@/components/Atoms/Typography.tsx'
 import urlImage from '@/assets/hero/hero_feature_home.png'
 const SectionFeatureHome = () => {
     return (
-        <section className={'container  lg:py-12 relative'}>
+        <section className={'container lg:py-12 relative'}>
             <div className={"bg-gradient-to-t bg-[#f3f3f3] absolute w-full h-full -z-10 blur-3xl"}/>
             <div
                 className={
-                    'px-18 grid grid-cols-1 items-center  gap-24 lg:grid-cols-2'
+                    'px-18 grid grid-cols-1 items-center  gap-8 lg:gap-24 lg:grid-cols-2'
                 }
             >
                 {/*LEFT IMAGE*/}
-                <div className={'ml-0 order-1'}>
+                <div className={'ml-0 px-12 lg:px-0 order-2 lg:order-1'}>
                     <img
                         src={urlImage}
                         alt={'Hero Feature Image'}
-                        className={' max-h-[550px]'}
+                        className={'max-h-[300px] md:max-h-[550px] md:mx-auto lg:mx-0'}
                     />
                 </div>
-                <div className={"order-2"}>
+                <div className={"order-1 lg:order-2"}>
                     <Typography
                         variant={'h1'}
                         as={"h1"}
-                        className={'!leading-extraLoose text-center'}
+                        className={'lg:!leading-extraLoose text-center'}
                     >
                         A complete coworking space solution for your business
                         and team

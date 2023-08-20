@@ -34,8 +34,9 @@ const HomePage = () => {
                 <SectionFeatureHome/>
                 <SectionOfficeService {...officeServiceProps}/>
                 <SectionLocationHome/>
-                <SectionCTAHome/>
                 <SectionReview {...reviewsProps}/>
+                <SectionCTAHome/>
+
             </main>
         </GeneralLayout>
     )

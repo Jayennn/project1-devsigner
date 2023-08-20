@@ -8,26 +8,30 @@ const SectionService = ({
     services,
 }: SectionServicePropsType) => {
     return (
-        <section className={'container py-12'}>
+        <section className={'container px-[2rem] lg:px-[2rem] py-12'}>
             <div className={"bg-gradient-to-t bg-[#f3f3f3] absolute w-full h-full -z-10 blur-3xl"}/>
-            <Typography
-                variant={'h5'}
-                as={"h5"}
-                color={'blue'}
-                className={'mb-4 uppercase'}
-            >
-                {title}
-            </Typography>
-            <Typography
-                variant={'h1'}
-                as={"h1"}
-                color={'primary'}
-                className={
-                    'line max-w-4xl !text-[40px] font-[700] !leading-extraLoose'
-                }
-            >
-                {subtitle}
-            </Typography>
+            <div className={"text-center lg:text-left"}>
+                <Typography
+                    variant={'h5'}
+                    as={"h5"}
+                    color={'blue'}
+                    className={'mb-4 uppercase '}
+                >
+                    {title}
+                </Typography>
+                <Typography
+                    variant={'h1'}
+                    as={"h1"}
+                    color={'primary'}
+                    className={
+                        'line max-w-4xl font-[700] leading-snug lg:!leading-extraLoose'
+                    }
+                >
+                    {subtitle}
+                </Typography>
+            </div>
+
+
             <div className={'my-16 grid grid-cols-1 gap-12 lg:grid-cols-3'}>
                 {services.map((props) => <ServiceCard {...props}/> )}
             </div>
