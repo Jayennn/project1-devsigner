@@ -1,12 +1,12 @@
 import SectionService from '@/components/Organisms/SectionService.tsx'
 import GeneralLayout from '@/components/Templates/GeneralLayout.tsx'
 import SectionOfficeService from '@/components/Organisms/SectionOfficeService.tsx'
-import SectionHeroHome from '@/components/Organisms/SectionHeroHome.tsx'
-import SectionFeatureHome from '@/components/Organisms/SectionFeatureHome.tsx'
-import SectionLocationHome from "@/components/Organisms/SectionLocationHome.tsx";
-import SectionCTAHome from "@/components/Organisms/SectionCTAHome.tsx";
+import SectionHeroHome from '@/components/Organisms/home-page/SectionHeroHome'
+import SectionFeatureHome from '@/components/Organisms/home-page/SectionFeatureHome'
+import SectionLocationHome from "@/components/Organisms/home-page/SectionLocationHome.tsx";
+import SectionCTAHome from "@/components/Organisms/home-page/SectionCTAHome.tsx";
 import SectionReview from '@/components/Organisms/SectionReview'
-import {REVIEWS, SERVICE_OFFICES, SERVICES} from "@/types/data.tsx";
+import { REVIEWS, SERVICE_OFFICES, SERVICES } from "@/types/data.tsx";
 
 
 const HomePage = () => {
@@ -28,15 +28,13 @@ const HomePage = () => {
     }
     return (
         <GeneralLayout>
-            <main className={'min-h-screen'}>
-                <SectionHeroHome/>
-                <SectionService {...serviceProps}/>
-                <SectionFeatureHome/>
-                <SectionOfficeService {...officeServiceProps}/>
-                <SectionLocationHome/>
-                <SectionCTAHome/>
-                <SectionReview {...reviewsProps}/>
-            </main>
+            <SectionHeroHome />
+            <SectionService {...serviceProps} />
+            <SectionFeatureHome />
+            <SectionOfficeService {...officeServiceProps} />
+            <SectionLocationHome />
+            <SectionReview {...reviewsProps} />
+            <SectionCTAHome />
         </GeneralLayout>
     )
 }

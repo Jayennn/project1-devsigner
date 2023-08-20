@@ -6,19 +6,18 @@ const SectionFeedbackSpace = () => {
    return (
       <section className="mt-28">
          <div className="container">
-            <div className="bg-[#0192FE99]/10 rounded-xl grid gap-10 justify-items-center px-20 py-24">
-               <Typography className="leading-tight text-center" as={"h1"} variant={"h1"} color={"primary"}>
+            <div className="bg-[#0192FE99]/10 rounded-xl grid gap-10 justify-items-center px-4 py-12 md:px-20 md:py-24">
+               <Typography className="text-3xl leading-tight text-center" as={"h1"} variant={"h1"} color={"primary"}>
                   One of our workspace experts will reach out to you based on your communication preferences.
                </Typography>
-               <div className="w-fit rounded-xl bg-[#FFFFFF]">
-                  <div className="grid max-w-3xl gap-8 px-16 py-20 mx-auto">
+               <div className="md:w-fit rounded-xl bg-[#FFFFFF]">
+                  <div className="grid max-w-3xl gap-8 px-4 py-10 md:px-16 md:py-20 mx-auto">
                      <div className="grid gap-8 text-center">
                         <Typography as={"h2"} variant={"h2"} color={"primary"}>
                            We'd love to hear from you
                         </Typography>
                         <Typography className="text-center" as={"p"} variant={"p"} color={"secondary"}>
-                           To book a complimentary private day office or desk, <br />
-                           simply complete the form below.
+                           To book a complimentary private day office or desk, simply complete the form below.
                         </Typography>
                      </div>
                      <form className="grid gap-6" action="">

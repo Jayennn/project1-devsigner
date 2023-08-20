@@ -11,8 +11,8 @@ const SectionFeedbackSpace = () => {
                   <Typography as={"h2"} variant={"h2"} color={"primary"}>
                      Take a tour & try a day of coworking for free
                   </Typography>
-                  <Typography as={"p"} variant={"p"} color={"secondary"}>
-                     We offer offices for lease by the day, by the week, or by the year. <br />
+                  <Typography className="max-w-lg mx-auto" as={"p"} variant={"p"} color={"secondary"}>
+                     We offer offices for lease by the day, by the week, or by the year.
                      Choose from any of our 3000 locations. Get a free quote!
                   </Typography>
                </div>
@@ -20,7 +20,7 @@ const SectionFeedbackSpace = () => {
                   <div className="w-full h-full absolute -z-10 blur-3xl bg-[#F0F0F0]" />
                   <Input className="bg-[#FFFFFF]" placeholder="First Name" />
                   <Input className="bg-[#FFFFFF]" placeholder="Last Name" />
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                      <Input className="bg-[#FFFFFF]" placeholder="Your Email" />
                      <Input className="bg-[#FFFFFF]" placeholder="Your Email" />
                   </div>

@@ -6,11 +6,11 @@ const SectionCTAContact = () => {
    return (
       <section className="mt-28">
          <div className="container">
-            <div className="bg-[#0192FE99]/10 rounded-xl px-10 py-8 flex flex-col md:flex-row items-center justify-between">
+            <div className="bg-[#0192FE99]/10 rounded-xl px-8 md:px-10 py-8 flex flex-col md:flex-row items-center justify-between">
                <div className="max-w-md">
                   <img src={person} alt="person" />
                </div>
-               <div className="grid max-w-lg gap-4">
+               <div className="mt-4 md:mt-0 grid max-w-lg gap-4">
                   <Typography className="md:leading-tight" as={"h2"} variant={"h2"} color={"primary"}>
                      Coworking, Private <br />
                      Offices and More

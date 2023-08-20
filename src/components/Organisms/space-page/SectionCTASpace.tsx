@@ -6,8 +6,8 @@ const SectionCTASpace = () => {
    return (
       <section className="mt-28">
          <div className="container">
-            <div className="bg-[#0192FE99]/10 rounded-xl p-16 flex flex-col md:flex-row items-center justify-between">
-               <div className="grid max-w-lg gap-8">
+            <div className="bg-[#0192FE99]/10 rounded-xl p-8 md:p-16 flex flex-col-reverse lg:flex-row items-center justify-between">
+               <div className="mt-8 md:mt-0 grid max-w-lg gap-8">
                   <Typography className="md:leading-tight" as={"h2"} variant={"h2"} color={"primary"}>
                      Stay productive with modern workspace, private office, and coworking solutions
                   </Typography>

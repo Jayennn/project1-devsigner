@@ -13,14 +13,15 @@ const SectionHeroHome = () => {
                     <Typography
                         as={'h1'}
                         variant={'h1'}
-                        className={'w-full md:max-w-xs font-extrabold !leading-snug'}
+                        className={'max-w-xs md:max-w-md font-extrabold !leading-snug'}
                     >
                         The workspace that works for you & your team
                     </Typography>
                     <Typography
                         variant={'h6'}
+                        as={"h6"}
                         color={'secondary'}
-                        className={'mb-6 lg:mb-16 mt-4 md:mt-8 max-w-[280px] md:max-w-lg font-medium'}
+                        className={'mb-6 lg:mb-16 mt-4 md:mt-8 max-w-md md:max-w-lg font-medium'}
                     >
                         A safe, comfortable, and hassle-free Coworking workspace
                         increases productivity. Ideal workspaces make life

@@ -33,7 +33,8 @@ export type SectionReviewPropsType = {
 export type ItemTeamPropsType = {
     name: string,
     position: string,
-    imageUrl: string
+    imageUrl: string,
+    isLast?: boolean
 }
 
 export type SectionOurTeamPropType = {
@@ -55,4 +56,5 @@ export type LocationCardPropsType = {
     title: string
     description: string
     link: string
+    icon: JSX.Element
 }

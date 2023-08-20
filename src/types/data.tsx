@@ -8,7 +8,9 @@ import {
 import {
    CoworkingSpacesIcon,
    HotDeskIcon,
+   LearnMoreIcon,
    MeetingRoomIcon,
+   SmallLocationIcon,
    StarterSpacesIcon,
    VirtualOfficeIcon
 } from "@/components/icons";
@@ -16,7 +18,9 @@ import officeUrl from "@/assets/card/Office.png";
 import coworkingUrl from "@/assets/card/coworking_space.png";
 import meetingUrl from "@/assets/card/meeting_space.png";
 
-import person from "@/assets/review-avatar/person1.png";
+import gibbs from "@/assets/review-avatar/gibbs.png";
+import brittany from "@/assets/review-avatar/brittany.png";
+import randal from "@/assets/review-avatar/randal.png";
 import andyUrl from "@/assets/team/andy.jpg";
 import johnUrl from "@/assets/team/john.jpg";
 import mattUrl from "@/assets/team/matt.jpg";
@@ -128,24 +132,30 @@ export const SERVICE_OFFICES: ServiceOfficeCardPropsType[] = [
    },
 ]
 
-export  const REVIEWS: ReviewCardPropsType[] = [
+export const REVIEWS: ReviewCardPropsType[] = [
+   {
+      description: "Lorem ipsum dolor sit amet consectetur non adipiscing elit gravida posuere odio metus adipiscing tincidunt venenatis amet sagittis tellus porttitor enim blandit venenatis tellus.",
+      name: "Randall Robertson",
+      role: "Project lead at Zoole",
+      imageUrl: randal
+   },
    {
       description: "Futurspace is an excellent coworking space for my agency. It’s a great place to meet other business. owners expectations",
       name: "Del Gibbs",
       role: "VP, Globee Softech",
-      imageUrl: person
+      imageUrl: gibbs
    },
    {
       description: "Quisque consectetur vulputate odio, non dictum metus porttitor molestie. Duis pharetra suscipit dolor, quis euismod velit fringilla sed.",
       name: "Brittany",
       role: "Co-Founder & CTO - Payfi",
-      imageUrl: person
+      imageUrl: brittany
    },
    {
       description: "Lorem ipsum dolor sit amet consectetur non adipiscing elit gravida posuere odio metus adipiscing tincidunt venenatis amet sagittis tellus porttitor enim blandit venenatis tellus.",
       name: "Randall Robertson",
       role: "Project lead at Zoole",
-      imageUrl: person
+      imageUrl: randal
    },
 ]
 
@@ -181,16 +191,19 @@ export const LOCATION_CARDS: LocationCardPropsType[] = [
    {
       title: "Global Locations",
       description: "1901 Thornridge Cir. Shiloh, Hawaii 81063",
-      link: "All locations"
+      link: "All locations",
+      icon: <LearnMoreIcon/>
    },
    {
       title: "Call Us Now",
       description: "(252) 555-0126 \n (808) 555-0111",
-      link: "Learn more"
+      link: "Learn more",
+      icon: <LearnMoreIcon/>
    },
    {
       title: "Customer Service",
       description: "Our friendly team is here to help.",
       link: "Email us",
+      icon: <SmallLocationIcon/>
    }
 ]

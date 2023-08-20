@@ -9,6 +9,7 @@ const SectionOurTeam = ({title, subtitle, description, teams}: SectionOurTeamPro
         <div className={"text-center"}>
             <Typography
                 variant={'h5'}
+                as={"h5"}
                 color={'blue'}
                 className={'font-semibold uppercase'}
             >
@@ -16,15 +17,17 @@ const SectionOurTeam = ({title, subtitle, description, teams}: SectionOurTeamPro
             </Typography>
             <Typography
                 variant={'h2'}
+                as={"h2"}
                 color={'primary'}
                 className={
-                    'mx-auto my-6 !text-[43px] !font-[700]  !leading-extraLoose'
+                    'mx-auto my-6'
                 }
             >
                 {subtitle}
             </Typography>
             <Typography
                 variant={'h6'}
+                as={"h6"}
                 color={'secondary'}
                 className={'mx-auto  max-w-4xl font-light'}
             >
@@ -33,9 +36,9 @@ const SectionOurTeam = ({title, subtitle, description, teams}: SectionOurTeamPro
         </div>
 
         {/*TEAMS*/}
-        <div className={"grid grid-cols-1 lg:grid-cols-5 gap-16 mt-12"}>
+        <div className={"grid grid-cols-2 lg:grid-cols-5 gap-6 md:gap-16 mt-12 last:justify-self-center "}>
             {
-                teams.map((props) => <ItemTeamAbout {...props}/>)
+                teams.map((props,index) => <ItemTeamAbout {...props} isLast={index+1 === teams.length}/>)
             }
         </div>
     </section>

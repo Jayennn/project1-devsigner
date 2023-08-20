@@ -1,6 +1,5 @@
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/Atoms/Card";
 import Typography from "@/components/Atoms/Typography";
-import { SmallLocationIcon } from "@/components/icons";
 import { MapsIcon } from "@/components/icons/MapIcons";
 import { LOCATION_CARDS } from "@/types/data";
 
@@ -12,9 +11,9 @@ const SectionMapContact = () => {
                <MapsIcon />
             </div>
             <div className="relative grid grid-cols-1 gap-4 mt-16 md:gap-0 md:grid-cols-3 place-items-center">
-               <div className="w-full h-full absolute -z-10 blur-3xl bg-[#F0F0F0]/60 " />
-               {LOCATION_CARDS.map(({ title, description, link }) => (
-                  <Card className="w-full md:max-w-xs md:w-[18rem] px-4 py-2">
+               <div className={"bg-gradient-to-t bg-[#f3f3f3] absolute w-full h-full -z-10 blur-3xl"} />
+               {LOCATION_CARDS.map(({ title, description, link, icon }) => (
+                  <Card key={title} className="shadow-none w-full md:max-w-xs md:w-[18rem] px-4 py-2">
                      <CardHeader>
                         <Typography as="h6" variant={"h6"} color={"primary"}>
                            {title}
@@ -29,7 +28,7 @@ const SectionMapContact = () => {
                         <Typography className="font-semibold" as={"p"} variant={"p"} color={"blue"}>
                            {link}
                         </Typography>
-                        <SmallLocationIcon />
+                        {icon}
                      </CardFooter>
                   </Card>
                ))}

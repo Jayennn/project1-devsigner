@@ -11,12 +11,12 @@ const SectionLocationHome = () => {
             <div>
                 <img src={imageUrl} className={""} alt={"Hero Location Home"}/>
             </div>
-            <div className={"pl-28"}>
-                <Typography variant={"h6"} color={"blue"} className={"uppercase"}>Our Offices</Typography>
-                <Typography variant={"h2"} className={"!text-4xl !leading-relaxed  font-extrabold my-4"}>Discover the Location that Best Fits Your
+            <div className={"lg:pl-28 pt-12 lg:pt-0"}>
+                <Typography variant={"h6"} as={"h6"} color={"blue"} className={"uppercase"}>Our Offices</Typography>
+                <Typography variant={"h2"} as={"h2"} className={" !leading-relaxed  font-extrabold my-4"}>Discover the Location that Best Fits Your
                     Business Needs
                 </Typography>
-                <Typography variant={"p"} color={"secondary"} className={"text-lg font-light"}>As we headstart into this new normal, we are ensuring your workspace
+                <Typography variant={"p"} color={"secondary"} className={"font-light"}>As we headstart into this new normal, we are ensuring your workspace
                     experience remains exceptional.
                 </Typography>
                 <ul className={"space-y-3 my-12"}>

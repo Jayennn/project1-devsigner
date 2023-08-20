@@ -2,12 +2,12 @@ import SectionOfficeService from "@/components/Organisms/SectionOfficeService.ts
 import SectionOurTeam from "@/components/Organisms/SectionOurTeam.tsx";
 import SectionPartner from "@/components/Organisms/SectionPartner.tsx";
 import SectionSubscribe from "@/components/Organisms/SectionSubscribe.tsx";
-import SectionCTAAbout from "@/components/Organisms/SectionCTAAbout.tsx";
+import SectionCTAAbout from "@/components/Organisms/about-page/SectionCTAAbout";
 import AboutLayout from "@/components/Templates/AboutLayout.tsx";
 import {SERVICE_OFFICES, TEAMS} from "@/types/data.tsx";
-import SectionHeroAbout from "@/components/Organisms/SectionHeroAbout.tsx";
-import SectionDataAbout from "@/components/Organisms/SectionDataAbout.tsx";
-import SectionCTAJoinAbout from "@/components/Organisms/SectionCTAJoinAbout.tsx";
+import SectionHeroAbout from "@/components/Organisms/about-page/SectionHeroAbout.tsx";
+import SectionDataAbout from "@/components/Organisms/about-page/SectionDataAbout.tsx";
+import SectionCTAJoinAbout from "@/components/Organisms/about-page/SectionCTAJoinAbout.tsx";
 
 const AboutPage = () => {
     const officeProps = {
