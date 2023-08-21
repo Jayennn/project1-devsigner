@@ -4,7 +4,7 @@ import { NAVBAR_LINKS } from "./data";
 import { cn } from "@/lib/utils.ts";
 import LogoIcon from "@/components/icons/LogoIcon.tsx";
 import { Link, useLocation } from "react-router-dom";
-import { AnimatePresence, motion, type Variants } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 import { useState } from "react";
 
 const Header = ({ theme = "default" }: { theme?: "blue" | "default" }) => {
