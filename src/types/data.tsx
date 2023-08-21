@@ -1,4 +1,5 @@
 import {
+   FAQPropsType,
    ItemTeamPropsType,
    LocationCardPropsType,
    ReviewCardPropsType,
@@ -205,5 +206,24 @@ export const LOCATION_CARDS: LocationCardPropsType[] = [
       description: "Our friendly team is here to help.",
       link: "Email us",
       icon: <SmallLocationIcon/>
+   }
+]
+
+export const FAQ_PRICING: FAQPropsType[] = [
+   {
+      title: "What are the benefits of joining the Futurspace network?",
+      description: "Lorem ipsum dolor sit amet consectetur adipiscing elit elementum velit nunc tortor pulvinar ornare"
+   },
+   {
+      title: "What should I expect from the screening process?",
+      description: "Lorem ipsum dolor sit amet consectetur adipiscing elit elementum velit nunc tortor pulvinar ornare"
+   },
+   {
+      title: "Is Telephone service available?",
+      description: "Lorem ipsum dolor sit amet consectetur adipiscing elit elementum velit nunc tortor pulvinar ornare"
+   },
+   {
+      title: "Is the money refundable if I am unable to register?",
+      description: "Lorem ipsum dolor sit amet consectetur adipiscing elit elementum velit nunc tortor pulvinar ornare"
    }
 ]

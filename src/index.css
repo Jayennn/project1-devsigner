@@ -30,3 +30,65 @@ body {
   border: 1px solid red;
 } */
   
+
+.embla__dot {
+  -webkit-appearance: none;
+  background-color: transparent;
+  touch-action: manipulation;
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.embla__dots {
+  z-index: 1;
+  bottom: -1rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.embla__dot {
+  width: 2.4rem;
+  height: 2.4rem;
+  display: flex;
+  align-items: center;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+
+.embla__dot:after {
+  background: #CCCCCC;
+  border-radius: 0.2rem;
+  width: 100%;
+  height: 0.2rem;
+  content: '';
+}
+
+.embla__dot--selected:after {
+  background: linear-gradient(
+    60deg,
+    #0192FE,
+    #F0F6FF
+  );
+}
+
+.select {
+  height: 3.2rem;
+  color: #C1C1C1;
+  background: url('assets/selectArrow.svg');
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  -moz-appearance: none; 
+	-webkit-appearance: none; 
+	appearance: none;
+  padding : 0 20px
+}
+

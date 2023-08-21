@@ -4,12 +4,19 @@ import { NAVBAR_LINKS } from "./data";
 import { cn } from "@/lib/utils.ts";
 import LogoIcon from "@/components/icons/LogoIcon.tsx";
 import { Link, useLocation } from "react-router-dom";
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion, type Variants } from 'framer-motion';
 import { useState } from "react";
 
 const Header = ({ theme = "default" }: { theme?: "blue" | "default" }) => {
+    const [animation, setAnimation] = useState('closed')
     const { pathname } = useLocation();
-    const [hover, setHover] = useState('')
+
+    const onClick = () => {
+        setAnimation('moving');
+        setTimeout(() => {
+            setAnimation(animation === "closed" ? "open" : "closed")
+        }, 100)
+    }
 
     const styles = {
         bgColor: `${theme === 'blue' && "bg-themeBlue"}`,
@@ -17,46 +24,83 @@ const Header = ({ theme = "default" }: { theme?: "blue" | "default" }) => {
         btnSignup: `${theme === 'blue' && "bg-white text-themeBlue"}`,
     }
 
+    const topBorderVariants: Variants = {
+        open: {
+            translateY: 5,
+            rotate: 45
+        },
+        closed: {
+            translateY: 0,
+            rotate: 0
+        }
+    }
+
+    const midBorderVariants: Variants = {
+        open: {
+            translateX: 45,
+            opacity: 0
+        },
+        closed: {
+            translateX: 0,
+            opacity: 1
+        }
+    }
+
+    const bottomBorderVariants: Variants = {
+        open: {
+            translateY: -11,
+            rotate: -45
+        },
+        closed: {
+            translateY:0,
+            rotate: 0
+        }
+    }
+
     return (
         <>
             <nav className={cn("h-36 w-full flex items-center", styles.bgColor, styles.color)}>
-                <div className="container pt-16 py-14 flex items-center justify-between">
-                    <div className="flex justify-center item-center">
+                <div className="container flex items-center justify-between pt-16 py-14">
+                    <Link to='/' className="flex justify-center item-center">
                         <LogoIcon theme={theme} />
                         <Typography className={cn("ml-3 uppercase text-[#0192FE]", styles.color)} variant="h4">
                             Futurspace
                         </Typography>
-                    </div>
-                    <ul className="hidden lg:flex items-center gap-7">
+                    </Link>
+                    <ul className="hidden items-center lg:flex gap-7">
                         {NAVBAR_LINKS.map((link) => (
-                            <li className={`${pathname.replace('/', '') === link.toLowerCase().replace(' ', "-") && "font-extrabold"} relative text-sm`}
+                            <li className={`${pathname.replace('/', '') === link.toLowerCase().replace(' ', "-") && "font-extrabold"} text-sm`}
                                 key={link}
-                                onMouseOver={() => setHover(link)}
                             >
                                 <Link
                                     to={`/${link.toLowerCase().replace(' ', "-")}`}>
                                     {link}
                                 </Link>
-                                {hover === link ? (
-                                    <motion.div
-                                        className="absolute bottom-[-1px] left-0 right-0 h-[1px] bg-[#0192FE]"
-                                        layoutId="absolute bottom-[-1px] left-0 right-0 h-[1px] bg-[#0192FE]"
-                                    />
-
-                                ) : null}
                             </li>
                         ))}
                         <li>
                             <Button
-                                className={cn("text-sm", styles.btnSignup)}
+                                className={cn("text-sm block", styles.btnSignup)}
                                 variant={"default"}
                                 size={"default"}>
                                 Sign up
                             </Button>
                         </li>
                     </ul>
-                    <button className="block md:hidden">
-
+                    <button className="relative block lg:hidden" onClick={onClick}>
+                        <motion.span
+                            animate={animation}
+                            variants={topBorderVariants}
+                            className='w-[30px] h-[4px] block bg-black rounded my-1' />
+                        <motion.span
+                            
+                            animate={animation}
+                            variants={midBorderVariants}
+                            className='w-[30px] h-[4px] block bg-black rounded my-1' />
+                        <motion.span
+                            animate={animation}
+                            variants={bottomBorderVariants}
+                            className='w-[30px] h-[4px] block bg-black rounded my-1' />
                     </button>
                 </div>
             </nav>

@@ -4,10 +4,11 @@ import { useEffect, useRef } from "react";
 type AnimatedPropsType = {
    className?: string,
    word: string,
+   justify?: "start" | "center" | "end"
 }
 
-const AnimatedText = ({ word, className }: AnimatedPropsType) => {
-   const words = word.split(" ");
+const AnimatedText = ({ word, className, justify = "start"}: AnimatedPropsType) => {
+   const words = word?.split(" ");
    const ref = useRef(null);
    const isInView = useInView(ref, { once: true })
 
@@ -16,6 +17,10 @@ const AnimatedText = ({ word, className }: AnimatedPropsType) => {
    useEffect(() => {
       if (isInView) {
          mainControls.start("visible")
+      }
+
+      return () => {
+         mainControls.stop()
       }
    }, [isInView])
 
@@ -55,7 +60,7 @@ const AnimatedText = ({ word, className }: AnimatedPropsType) => {
       <motion.div
          ref={ref}
          variants={container}
-         className="overflow-hidden relative flex flex-wrap"
+         className={`relative flex pb-2 flex-wrap overflow-hidden justify-${justify}`}
          initial="hidden"
          animate={mainControls}
       >

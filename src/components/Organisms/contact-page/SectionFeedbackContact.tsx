@@ -20,9 +20,16 @@ const SectionFeedbackSpace = () => {
                   <div className="w-full h-full absolute -z-10 blur-3xl bg-[#F0F0F0]" />
                   <Input className="bg-[#FFFFFF]" placeholder="First Name" />
                   <Input className="bg-[#FFFFFF]" placeholder="Last Name" />
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="grid grid-cols-2 gap-4">
                      <Input className="bg-[#FFFFFF]" placeholder="Your Email" />
-                     <Input className="bg-[#FFFFFF]" placeholder="Your Email" />
+                     <select className="select border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring h-9 rounded-3xl px-7 py-6  text-muted-foreground shadow-sm" name="" id="">
+                        <option value="">Select Option</option>
+                     </select>
+                     {/* <select className="flex h-9  rounded-3xl border border-input px-7 py-6 text-base shadow-sm transition-colors file:border-0 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 bg-[#FFFFFF] text-muted-foreground" placeholder="Your Email">
+                        <option>Select option</option>
+                        <option value="2">lorem</option>
+                        <option value="3">lorem</option>
+                     </select> */}
                   </div>
                   <Input className="bg-[#FFFFFF]" placeholder="Message Email" />
                   <Button variant={"default"} size={"lg"}>

@@ -7,37 +7,34 @@ import useEmblaCarousel, {
 } from 'embla-carousel-react';
 import AutoPlay from "embla-carousel-autoplay"
 import { useCallback, useEffect, useState } from "react";
+import AnimatedText from "../Animation/AnimatedText";
 
 const SectionReview = ({ Cards }: SectionReviewPropsType) => {
+   const [emblaRef, emblaApi] = useEmblaCarousel({loop: true}, [AutoPlay()])
    const [prevBtnDisabled, setPrevBtnDisabled] = useState(true)
    const [nextBtnDisabled, setNextBtnDisabled] = useState(true)
-
-   const [emblaRef, emblaApi] = useEmblaCarousel({
-      // slides,
-      loop: true
-   }, [
-      AutoPlay(
-         {
-            delay: 2000,
-            jump: true,
-         }
-      ),
-      
-   ]);
+   const [selectedIndex, setSelectedIndex] = useState(0)
+   const [scrollSnaps, setScrollSnaps] = useState<number[]>([])
 
    const scrollPrev = useCallback(
       () => emblaApi && emblaApi.scrollPrev(),
       [emblaApi]
    )
-
    const scrollNext = useCallback(
       () => emblaApi && emblaApi.scrollNext(),
       [emblaApi]
    )
+   const scrollTo = useCallback(
+      (index: number) => emblaApi && emblaApi.scrollTo(index),
+      [emblaApi]
+   )
 
-
+   const onInit = useCallback((emblaApi: EmblaCarouselType) => {
+      setScrollSnaps(emblaApi.scrollSnapList())
+   }, [])
 
    const onSelect = useCallback((emblaApi: EmblaCarouselType) => {
+      setSelectedIndex(emblaApi.selectedScrollSnap())
       setPrevBtnDisabled(!emblaApi.canScrollPrev())
       setNextBtnDisabled(!emblaApi.canScrollNext())
    }, [])
@@ -45,24 +42,27 @@ const SectionReview = ({ Cards }: SectionReviewPropsType) => {
    useEffect(() => {
       if (!emblaApi) return
 
+      onInit(emblaApi)
       onSelect(emblaApi)
+      emblaApi.on('reInit', onInit)
       emblaApi.on('reInit', onSelect)
       emblaApi.on('select', onSelect)
-   }, [emblaApi, onSelect])
+   }, [emblaApi, onInit, onSelect])
 
    return (
       <section className="relative mt-28">
          <div className={"bg-gradient-to-t bg-[#f3f3f3] absolute w-full h-full -z-10 blur-3xl"}/>
          <div className="container grid">
             <div className="grid">
-               <Typography className="text-base uppercase md:text-lg md:leading-tight" as={"h1"} variant={"h1"} color={"blue"}>
-                  Reviews
-               </Typography>
-               <div className="flex mt-4 items-center justify-between">
-                  <Typography className="md:leading-tight" as={"h1"} variant={"h1"} color={"primary"}>
-                     What Our Members Say
+                  <Typography className="text-base uppercase md:text-lg md:leading-tight" as={"div"} variant={"h1"} color={"blue"}>
+                  <AnimatedText word="Reviews"/>
                   </Typography>
-                  <span className="hidden md:inline-flex gap-2"> 
+
+               <div className="flex items-center justify-between mt-4">
+                  <Typography className="md:leading-tight" as={"h1"} variant={"h1"} color={"primary"}>
+                     <AnimatedText word="What Our Members Say"/>
+                  </Typography>
+                  <span className="hidden gap-2 md:inline-flex"> 
                      <button className="cursor-pointer" onClick={scrollPrev} disabled={prevBtnDisabled}>
                         <ReviewPrevIcon/>
                      </button>
@@ -75,9 +75,21 @@ const SectionReview = ({ Cards }: SectionReviewPropsType) => {
             </div>
             {/* Example Review card soon using swiper */}
             <div className="overflow-hidden" ref={emblaRef}>
-               <div className="py-8 mt-12 flex pl-4 gap-4 touch-pan-y">
+               <div className="flex gap-4 py-8 pl-4 mt-12 touch-pan-y">
                   {Cards.map((props,index) => (
                      <ReviewCard {...props} key={index}/>
+                  ))}
+               </div>
+               <div className="embla__dots">
+                  {scrollSnaps.map((_, index) => (
+                     <button
+                        onClick={() => scrollTo(index)}
+                        key={index}
+                        type="button"
+                        className={`embla__dot`.concat(
+                           index === selectedIndex ? ' embla__dot--selected' : ""
+                        )}
+                     />
                   ))}
                </div>
             </div>

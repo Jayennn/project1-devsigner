@@ -58,3 +58,8 @@ export type LocationCardPropsType = {
     link: string
     icon: JSX.Element
 }
+
+export type FAQPropsType = {
+    title: string,
+    description: string
+}

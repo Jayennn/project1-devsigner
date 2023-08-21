@@ -1,6 +1,7 @@
 import Typography from "@/components/Atoms/Typography.tsx";
 import ItemTeamAbout from "@/components/Molecules/ItemTeamAbout.tsx";
 import {SectionOurTeamPropType} from "@/types/CustomPropsType.tsx";
+import AnimatedText from "../Animation/AnimatedText";
 
 
 const SectionOurTeam = ({title, subtitle, description, teams}: SectionOurTeamPropType) => {
@@ -9,21 +10,21 @@ const SectionOurTeam = ({title, subtitle, description, teams}: SectionOurTeamPro
         <div className={"text-center"}>
             <Typography
                 variant={'h5'}
-                as={"h5"}
+                as={"div"}
                 color={'blue'}
                 className={'font-semibold uppercase'}
             >
-                {title}
+                <AnimatedText justify="center" word={title}/>
             </Typography>
             <Typography
                 variant={'h2'}
-                as={"h2"}
+                as={"div"}
                 color={'primary'}
                 className={
                     'mx-auto my-6'
                 }
             >
-                {subtitle}
+                <AnimatedText justify="center" word={subtitle}/>
             </Typography>
             <Typography
                 variant={'h6'}

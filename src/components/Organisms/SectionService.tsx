@@ -1,6 +1,7 @@
 import { SectionServicePropsType } from '@/types/CustomPropsType.tsx'
 import Typography from '@/components/Atoms/Typography.tsx'
 import ServiceCard from '@/components/Molecules/ServiceCard.tsx'
+import AnimatedText from '../Animation/AnimatedText'
 
 const SectionService = ({
     title,
@@ -14,21 +15,21 @@ const SectionService = ({
                 <div className={"text-center lg:text-left"}>
                     <Typography
                         variant={'h5'}
-                        as={"h5"}
+                        as={"div"}
                         color={'blue'}
                         className={'mb-4 uppercase '}
                     >
-                        {title}
+                        <AnimatedText justify='center' word={title}/>
                     </Typography>
                     <Typography
                         variant={'h1'}
-                        as={"h1"}
+                        as={"div"}
                         color={'primary'}
                         className={
-                            'line max-w-4xl font-[700] leading-snug lg:!leading-extraLoose'
+                            'line max-w-4xl text-3xl mx-auto font-[700] leading-snug lg:!leading-extraLoose'
                         }
                     >
-                        {subtitle}
+                        <AnimatedText justify='center' word={subtitle}/>
                     </Typography>
                 </div>
 

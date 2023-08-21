@@ -1,5 +1,6 @@
 import Typography from '@/components/Atoms/Typography.tsx'
 import urlImage from '@/assets/hero/hero_feature_home.png'
+import AnimatedText from '@/components/Animation/AnimatedText'
 const SectionFeatureHome = () => {
     return (
         <section className={'lg:py-12'}>
@@ -24,8 +25,8 @@ const SectionFeatureHome = () => {
                             as={"h1"}
                             className={'lg:!leading-extraLoose text-center'}
                         >
-                            A complete coworking space solution for your business
-                            and team
+                            <AnimatedText justify='center' word='A complete coworking space solution for your business and team'/>
+                            
                         </Typography>
                         <div className={'my-12 relative space-y-6'}>
                             <div className="w-full h-full absolute -z-10 blur-3xl bg-[#F0F0F0]" />

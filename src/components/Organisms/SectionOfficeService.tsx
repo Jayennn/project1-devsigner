@@ -1,6 +1,7 @@
 import { SectionServiceOfficePropType } from '@/types/CustomPropsType.tsx'
 import Typography from '@/components/Atoms/Typography.tsx'
 import ServiceOfficeCard from '@/components/Molecules/ServiceOfficeCard.tsx'
+import AnimatedText from '../Animation/AnimatedText'
 
 const SectionOfficeService = ({
     title,
@@ -12,23 +13,25 @@ const SectionOfficeService = ({
         <section className={'py-12 text-center relative'}>
             <div className={"bg-gradient-to-t bg-[#f3f3f3] absolute w-full h-full -z-10 blur-3xl"} />
             <div className={"container"}>
-                <Typography
-                    variant={'h4'}
-                    as={"h4"}
-                    color={'blue'}
-                    className={'font-semibold uppercase'}
-                >
-                    {title}
-                </Typography>
+                {title && (
+                    <Typography
+                        variant={'h4'}
+                        as={"div"}
+                        color={'blue'}
+                        className={'font-semibold uppercase'}
+                    >
+                        <AnimatedText justify='center' word={title}/>
+                    </Typography>
+            )}
                 <Typography
                     variant={'h2'}
-                    as={"h2"}
+                    as={"div"}
                     color={'primary'}
                     className={
-                        'mx-auto my-6 max-w-[690px]'
+                        'mx-auto my-6 max-w-[690px] h-fit'
                     }
                 >
-                    {subtitle}
+                    <AnimatedText justify='center' word={subtitle}/>
                 </Typography>
                 <Typography
                     variant={'h6'}
