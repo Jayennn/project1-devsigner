@@ -14,9 +14,6 @@ const SectionHeroHome = () => {
             >
 
                 <div>
-                    {/* <AnimatedText className='text-[#2E3135] text-4xl md:text-5xl font-extrabold !leading-snug' word='The workspace'/>
-                    <AnimatedText className='text-[#2E3135] text-4xl md:text-5xl font-extrabold !leading-snug' word='that works for you'/>
-                    <AnimatedText className='text-[#2E3135] text-4xl md:text-5xl font-extrabold !leading-snug' word='& your team'/> */}
                     <Typography
                         as={'div'}
                         variant={'h1'}
@@ -39,10 +36,10 @@ const SectionHeroHome = () => {
                         </Typography>
                     </Reveal>
                     <div className={'flex gap-6'}>
-                        <Button className={'!py-6 text-xs lg:text-lg font-bold'}>
+                        <Button type='button' className={'!py-6 text-xs lg:text-lg font-bold'}>
                             Discover now
                         </Button>
-                        <Button variant={'outline'} className={'!py-6 text-xs lg:text-lg font-bold'}>
+                        <Button type='button' variant={'outline'} className={'!py-6 text-xs lg:text-lg font-bold'}>
                             Book a tour
                         </Button>
                     </div>

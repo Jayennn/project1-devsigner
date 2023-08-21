@@ -12,7 +12,7 @@ const SectionCTAAbout = () => {
                 <Typography as={"h6"} variant={"h6"} color={"secondary"} className={"my-8 max-w-xl font-medium"}>
                     We strive to create a professional and welcoming environment in order to foster collaboration, creativity, and productivity.
                 </Typography>
-                <Button variant={"default"} className={"!py-6 text-lg"}>
+                <Button type='button' variant={"default"} className={"!py-6 text-lg"}>
                     Get Started
                 </Button>
             </div>

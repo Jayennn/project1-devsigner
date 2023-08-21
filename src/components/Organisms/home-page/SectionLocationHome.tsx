@@ -33,7 +33,7 @@ const SectionLocationHome = () => {
                         <ItemLocation icon={<LocationIcon />} title={"Sydney, Australia"} />
                     </li>
                 </ul>
-                <Button className={"!py-6 text-lg font-semibold"}>View Locations</Button>
+                <Button type="button" className={"!py-6 text-lg font-semibold"}>View Locations</Button>
             </div>
 
         </div>

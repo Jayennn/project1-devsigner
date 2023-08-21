@@ -5,6 +5,7 @@ type AnimatedPropsType = {
    className?: string,
    word: string,
    justify?: "start" | "center" | "end"
+   // justifeMobile?: "center" | "start"
 }
 
 const AnimatedText = ({ word, className, justify = "start"}: AnimatedPropsType) => {

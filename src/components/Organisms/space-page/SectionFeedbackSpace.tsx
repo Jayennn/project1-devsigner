@@ -27,7 +27,7 @@ const SectionFeedbackSpace = () => {
                            <Input placeholder="Enter your name" />
                            <Input placeholder="Enter your email" />
                            <Input placeholder="Message" />
-                           <Button variant={"default"} size={"lg"}>
+                           <Button type="submit" variant={"default"} size={"lg"}>
                               Submit
                            </Button>
                         </form>

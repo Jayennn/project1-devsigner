@@ -11,7 +11,7 @@ const SectionCTAHome = () => {
             <div className={"space-y-6 mt-4"}>
                 <Typography variant={"h2"} as={"h2"} className={"max-w-lg !leading-relaxed font-bold"}>Customised workspace
                     for rent wherever you need it</Typography>
-                <Button className={"!py-6 text-lg"}>Book Tour</Button>
+                <Button type="button" className={"!py-6 text-lg"}>Book Tour</Button>
             </div>
             <div className={"relative w-fit"}>
                 <img src={imageUrl} className={"w-full md:w-[350px] rounded-2xl"} alt={"CTA Card Home"}/>

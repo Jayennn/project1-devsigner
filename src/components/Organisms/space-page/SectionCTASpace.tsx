@@ -14,7 +14,7 @@ const SectionCTASpace = () => {
                   <Typography className="font-normal" as={"h6"} variant={"h6"} color={"secondary"}>
                      Workspaces that suit your business. We have professional and inspiring work environments to suit businesses of all sizes and budget.
                   </Typography>
-                  <Button className="w-fit" variant={"default"} size={"lg"}>
+                  <Button type="button" className="w-fit" variant={"default"} size={"lg"}>
                      Get Started
                   </Button>
                </div>

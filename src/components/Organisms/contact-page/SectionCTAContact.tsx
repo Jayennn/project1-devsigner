@@ -19,10 +19,10 @@ const SectionCTAContact = () => {
                      Your membership at is all-inclusive, providing amenities designed to allow you to focus on your business instead of logistics.
                   </Typography>
                   <div className="flex gap-3 mt-6">
-                     <Button variant={"default"} size={"lg"}>
+                     <Button type="button" variant={"default"} size={"lg"}>
                         Discover now
                      </Button>
-                     <Button variant={"outline"} size={"lg"}>
+                     <Button type="button" variant={"outline"} size={"lg"}>
                         Book a tour
                      </Button>
                   </div>

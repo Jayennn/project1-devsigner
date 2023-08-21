@@ -31,7 +31,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
                      ref={ref}
                      {...props}
                      />
-                     <Button variant={"default"} size={"lg"}>
+                     <Button type="submit" variant={"default"} size={"lg"}>
                         Submit
                      </Button>
                </div>

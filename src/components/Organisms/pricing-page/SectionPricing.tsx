@@ -13,10 +13,10 @@ const SectionPricing = () => {
          <div className="container">
             <div className="grid place-content-center">
                <div className="flex items-center justify-end bg-[#C9E8FF] rounded-[28px] px-1 py-1">
-                  <Button className="bg-[#FFFFFF] border-none" variant="outline" size="lg">
+                  <Button type="button" className="bg-[#FFFFFF] border-none" variant="outline" size="lg">
                      Monthly
                   </Button>
-                  <Button className="text-base font-normal text-black border-none" variant="outline" size="lg">
+                  <Button type="button" className="text-base font-normal text-black border-none" variant="outline" size="lg">
                      Annual (save 15%)
                   </Button>
                </div>
@@ -46,7 +46,7 @@ const SectionPricing = () => {
                            </Typography>
                         </span>
                      ))}
-                     <Button variant="default" size="lg">
+                     <Button type="button" variant="default" size="lg">
                         Get Started
                      </Button>
                   </CardContent>
@@ -74,7 +74,7 @@ const SectionPricing = () => {
                            </Typography>
                         </span>
                      ))}
-                     <Button variant="default" size="lg">
+                     <Button type="button" variant="default" size="lg">
                         Get Started
                      </Button>
                   </CardContent>
@@ -102,7 +102,7 @@ const SectionPricing = () => {
                            </Typography>
                         </span>
                      ))}
-                     <Button variant="default" size="lg">
+                     <Button type="button" variant="default" size="lg">
                         Get Started
                      </Button>
                   </CardContent>

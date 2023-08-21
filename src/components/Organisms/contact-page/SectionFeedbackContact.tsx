@@ -32,7 +32,7 @@ const SectionFeedbackSpace = () => {
                      </select> */}
                   </div>
                   <Input className="bg-[#FFFFFF]" placeholder="Message Email" />
-                  <Button variant={"default"} size={"lg"}>
+                  <Button type="button" variant={"default"} size={"lg"}>
                      Submit
                   </Button>
                </form>

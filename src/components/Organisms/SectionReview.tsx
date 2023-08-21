@@ -63,10 +63,10 @@ const SectionReview = ({ Cards }: SectionReviewPropsType) => {
                      <AnimatedText word="What Our Members Say"/>
                   </Typography>
                   <span className="hidden gap-2 md:inline-flex"> 
-                     <button className="cursor-pointer" onClick={scrollPrev} disabled={prevBtnDisabled}>
+                     <button type="submit" className="cursor-pointer" onClick={scrollPrev} disabled={prevBtnDisabled}>
                         <ReviewPrevIcon/>
                      </button>
-                     <button className="cursor-pointer" onClick={scrollNext} disabled={nextBtnDisabled}>
+                     <button type="submit" className="cursor-pointer" onClick={scrollNext} disabled={nextBtnDisabled}>
                         <ReviewNextIcon/>
                      </button>
                         

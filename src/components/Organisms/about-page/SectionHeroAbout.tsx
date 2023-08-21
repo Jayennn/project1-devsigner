@@ -6,7 +6,7 @@ const SectionHeroAbout = () => {
         <section className={"bg-themeBlue pb-24 md:pb-12 py-12"}>
             <div className={"container"}>
                 <div className={"w-full flex flex-col lg:flex-row justify-between text-white pb-24"}>
-                    <Typography variant={"h1"} as={"div"} className={"text-white md:max-w-xs text-center md:text-left"}>
+                    <Typography variant={"h1"} as={"div"} className={"text-white mx-auto md:mx-0 md:max-w-xs text-center md:text-left"}>
                         <AnimatedText word='About our company'/>
                     </Typography>
                     <div className={"max-w-lg space-y-6 text-center md:text-left mt-8 lg:mt-0"}>

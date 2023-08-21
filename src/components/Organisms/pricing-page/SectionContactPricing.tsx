@@ -11,7 +11,7 @@ const SectionContactPricing = () => {
                   <Typography className="md:leading-tight" as={"h2"} variant={"h2"} color={"primary"}>
                      Confused about which plan would be most suitable for me?
                   </Typography>
-                  <Button className="w-fit" variant={"default"} size={"lg"}>
+                  <Button type="button" className="w-fit" variant={"default"} size={"lg"}>
                      Contact us
                   </Button>
                </div>

@@ -15,7 +15,7 @@ const Header = ({ theme = "default" }: { theme?: "blue" | "default" }) => {
         setAnimation('moving');
         setTimeout(() => {
             setAnimation(animation === "closed" ? "open" : "closed")
-        }, 100)
+        }, 200)
     }
 
     const styles = {
@@ -80,6 +80,7 @@ const Header = ({ theme = "default" }: { theme?: "blue" | "default" }) => {
                         ))}
                         <li>
                             <Button
+                                type="submit"
                                 className={cn("text-sm block", styles.btnSignup)}
                                 variant={"default"}
                                 size={"default"}>
@@ -87,7 +88,7 @@ const Header = ({ theme = "default" }: { theme?: "blue" | "default" }) => {
                             </Button>
                         </li>
                     </ul>
-                    <button className="relative block lg:hidden" onClick={onClick}>
+                    <button type="submit" className="relative block lg:hidden" onClick={onClick}>
                         <motion.span
                             animate={animation}
                             variants={topBorderVariants}
